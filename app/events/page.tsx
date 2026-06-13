@@ -1,6 +1,7 @@
 import PageBanner from "@/components/PageBanner";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { events } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 const pastEvents = [
   {
     id: "nimet-2022",
-    title: "Strategic Rainfall Prediction Conference — NIMET",
+    title: "Strategic Rainfall Prediction Conference, NIMET",
     date: "2022",
     location: "Lagos, Nigeria",
     description: "Zak Karim from Wagtech Projects delivered a presentation on advanced weather monitoring at Nigeria's Strategic Rainfall Prediction conference organized by NIMET.",
@@ -19,7 +20,7 @@ const pastEvents = [
   },
   {
     id: "malawi-install-2022",
-    title: "40+ AWS Installation — Malawi DCCMS",
+    title: "40+ AWS Installation, Malawi DCCMS",
     date: "2022",
     location: "Malawi",
     description: "Wagtech Africa completed a major installation of 40+ automatic weather stations across Malawi in collaboration with the Department of Climate Change and Meteorological Services.",
@@ -50,7 +51,7 @@ export default function EventsPage() {
             <h2 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 900, color: "#0D0D0D", fontSize: "1.6rem", letterSpacing: "-0.02em", marginBottom: "32px" }}>
               Scheduled Events
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(360px, 1fr))", gap: "20px" }}>
+            <div className="events-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(360px, 1fr))", gap: "20px" }}>
               {events.map((ev) => (
                 <div key={ev.id} className="card-light" style={{ padding: "32px" }}>
                   <div style={{ display: "flex", gap: "18px", alignItems: "flex-start" }}>
@@ -107,6 +108,16 @@ export default function EventsPage() {
             </div>
           </div>
 
+          {/* Photo strip */}
+          <div style={{ display: "flex", height: "140px", overflow: "hidden", gap: "4px", borderRadius: "16px", marginBottom: "24px" }}>
+            {["/images/gallery/22.jpg","/images/gallery/10.jpg","/images/gallery/18.jpg","/images/gallery/21.jpg"].map((src, i) => (
+              <div key={i} style={{ flex: 1, position: "relative", overflow: "hidden" }}>
+                <Image src={src} alt="Wagtech Africa events" fill sizes="25vw" style={{ objectFit: "cover" }} />
+                <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.15)" }} />
+              </div>
+            ))}
+          </div>
+
           {/* Meet us banner */}
           <div style={{ background: "#111111", borderRadius: "20px", padding: "56px", textAlign: "center" }}>
             <h3 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 900, color: "#fff", fontSize: "1.6rem", letterSpacing: "-0.02em", marginBottom: "12px" }}>
@@ -122,6 +133,12 @@ export default function EventsPage() {
           </div>
         </div>
       </section>
+
+      <style>{`
+        @media (max-width: 768px) {
+          .events-grid { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
     </>
   );
 }

@@ -28,7 +28,7 @@ export default function AboutPage() {
             Africa&apos;s Trusted Scientific Solutions Partner
           </h1>
           <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "1.125rem", lineHeight: 1.75, maxWidth: "560px" }}>
-            From Nairobi to the Nile — delivering precision scientific equipment, monitoring systems, and technical expertise across Africa since 1990.
+            From Nairobi to the Nile, delivering precision scientific equipment, monitoring systems, and technical expertise across Africa since 1990.
           </p>
         </div>
       </PageBanner>
@@ -36,7 +36,7 @@ export default function AboutPage() {
       {/* Stats bar */}
       <div style={{ background: "#C41A1A" }}>
         <div className="wrap" style={{ paddingTop: "28px", paddingBottom: "28px" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "20px" }}>
+          <div className="about-stats-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "20px" }}>
             {stats.map((s) => (
               <div key={s.label} style={{ textAlign: "center" }}>
                 <div style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontSize: "2rem", fontWeight: 900, color: "#fff", lineHeight: 1 }}>{s.value}</div>
@@ -50,7 +50,7 @@ export default function AboutPage() {
       {/* Company Background */}
       <section className="section" style={{ background: "#fff" }}>
         <div className="wrap">
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "72px", alignItems: "start" }}>
+          <div className="about-story-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "72px", alignItems: "start" }}>
             <div>
               <div className="eyebrow">Our Story</div>
               <h2 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 900, color: "#0D0D0D", letterSpacing: "-0.03em", marginBottom: "20px" }}>
@@ -58,13 +58,13 @@ export default function AboutPage() {
               </h2>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                 <p style={{ color: "#6B7280", lineHeight: 1.8 }}>
-                  Wagtech Africa is the regional African hub for Wagtech Projects UK — the original brand in portable water quality and environmental monitoring equipment since 1990. We supply affordable, high-quality scientific equipment across water quality, environmental monitoring, agronomy, and laboratory supplies.
+                  Wagtech Africa is the regional African hub for Wagtech Projects UK, the original brand in portable water quality and environmental monitoring equipment since 1990. We supply affordable, high-quality scientific equipment across water quality, environmental monitoring, agronomy, and laboratory supplies.
                 </p>
                 <p style={{ color: "#6B7280", lineHeight: 1.8 }}>
                   We have been the major supplier for testing equipment in the humanitarian aid sector and have built an extensive network of clients including government agencies, research institutions, water utilities, NGOs, and commercial operators across more than 20 African countries.
                 </p>
                 <p style={{ color: "#6B7280", lineHeight: 1.8 }}>
-                  Our base in Karen, Nairobi positions us perfectly to serve East Africa and beyond — with regional presence in Kenya, Tanzania, South Sudan, Sudan, Somalia, and Eritrea.
+                  Our base in Karen, Nairobi positions us perfectly to serve East Africa and beyond, with regional presence in Kenya, Tanzania, South Sudan, Sudan, Somalia, and Eritrea.
                 </p>
               </div>
             </div>
@@ -76,7 +76,7 @@ export default function AboutPage() {
                 <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 55%)" }} />
                 <div style={{ position: "absolute", bottom: "16px", left: "18px" }}>
                   <div style={{ color: "#fff", fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 700, fontSize: "0.875rem" }}>Wagtech Projects UK</div>
-                  <div style={{ color: "rgba(255,255,255,0.65)", fontSize: "11px" }}>Our parent company — the original brand since 1990</div>
+                  <div style={{ color: "rgba(255,255,255,0.65)", fontSize: "11px" }}>Our parent company, the original brand since 1990</div>
                 </div>
               </div>
 
@@ -115,7 +115,7 @@ export default function AboutPage() {
               In-House Scientific Capabilities
             </h2>
             <p style={{ color: "#6B7280", maxWidth: "560px", margin: "0 auto", lineHeight: 1.7 }}>
-              Our team provides expert technical support from initial enquiry through to final installation, commissioning, and training — with in-house expertise across five disciplines.
+              Our team provides expert technical support from initial enquiry through to final installation, commissioning, and training, with in-house expertise across five disciplines.
             </p>
           </div>
 
@@ -161,7 +161,7 @@ export default function AboutPage() {
               { title: "Freight & Logistics", desc: "Expert handling of international freight and customs clearance for scientific equipment across African borders.", iconPath: "M1 5h12v9H1zM13 8h4l2 4v2h-6V8z" },
               { title: "Installation & Commissioning", desc: "Professional on-site installation and commissioning by certified engineers across the region.", iconPath: "M10 2v2M10 16v2M2 10h2M16 10h2M4.22 4.22l1.41 1.41M14.37 14.37l1.41 1.41" },
               { title: "Training Programs", desc: "Hands-on training for operators, technicians, and managers on all equipment types.", iconPath: "M2 3h16v10H2zM2 13l8 5 8-5" },
-              { title: "Technical Support", desc: "Ongoing technical assistance from our expert team — phone, email, and on-site visits.", iconPath: "M4 3h3l1.5 4-2 1.5c1 2 2.5 3.5 4.5 4.5L12.5 11 16 12.5V16a1 1 0 01-1 1C6 17 3 8 3 4a1 1 0 011-1z" },
+              { title: "Technical Support", desc: "Ongoing technical assistance from our expert team, phone, email, and on-site visits.", iconPath: "M4 3h3l1.5 4-2 1.5c1 2 2.5 3.5 4.5 4.5L12.5 11 16 12.5V16a1 1 0 01-1 1C6 17 3 8 3 4a1 1 0 011-1z" },
               { title: "Calibration & Maintenance", desc: "Regular calibration, preventive maintenance, and reagent supply services.", iconPath: "M10 2v2M10 16v2M2 10h2M16 10h2M4.22 4.22l1.41 1.41M14.37 14.37l1.41 1.41" },
               { title: "Tender Implementation", desc: "Extensive experience implementing government and NGO tender contracts across Africa.", iconPath: "M12 2H5a1.5 1.5 0 00-1.5 1.5v13A1.5 1.5 0 005 18h10a1.5 1.5 0 001.5-1.5V6L12 2z" },
             ].map((svc) => (
@@ -266,6 +266,13 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <style>{`
+        @media (max-width: 768px) {
+          .about-stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
+          .about-story-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+        }
+      `}</style>
     </>
   );
 }

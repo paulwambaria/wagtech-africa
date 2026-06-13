@@ -1,11 +1,12 @@
 import PageBanner from "@/components/PageBanner";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { news } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Blog & News",
-  description: "Latest news, project updates, and technical articles from Wagtech Africa — Africa's scientific solutions partner.",
+  description: "Latest news, project updates, and technical articles from Wagtech Africa, Africa's scientific solutions partner.",
 };
 
 export default function BlogPage() {
@@ -31,12 +32,10 @@ export default function BlogPage() {
           {/* Featured */}
           <div style={{ marginBottom: "56px" }}>
             <div className="eyebrow" style={{ marginBottom: "20px" }}>Featured</div>
-            <div className="card-light" style={{ overflow: "hidden", display: "grid", gridTemplateColumns: "1fr 1fr" }}>
-              <div style={{ height: "100%", minHeight: "280px", background: "linear-gradient(135deg, #7B1515 0%, #111111 100%)", display: "flex", alignItems: "center", justifyContent: "center", position: "relative", overflow: "hidden" }}>
-                <div style={{ position: "absolute", inset: 0, background: "radial-gradient(circle at 30% 50%, rgba(196,26,26,0.4) 0%, transparent 65%)" }} />
-                <svg width="64" height="64" viewBox="0 0 20 20" fill="none" stroke="rgba(255,255,255,0.2)" strokeWidth="0.8" strokeLinecap="round" strokeLinejoin="round" style={{ position: "relative" }}>
-                  <path d="M12 2H5a1.5 1.5 0 00-1.5 1.5v13A1.5 1.5 0 005 18h10a1.5 1.5 0 001.5-1.5V6L12 2z"/><path d="M12 2v4h4"/><path d="M7 10h6M7 13h4"/>
-                </svg>
+            <div className="blog-featured-card card-light" style={{ overflow: "hidden", display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+              <div style={{ height: "100%", minHeight: "280px", position: "relative", overflow: "hidden" }}>
+                <Image src="/images/gallery/10.jpg" alt={featured.title} fill sizes="600px" style={{ objectFit: "cover" }} />
+                <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.35)" }} />
               </div>
               <div style={{ padding: "44px" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "16px" }}>
@@ -59,11 +58,10 @@ export default function BlogPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "20px", marginBottom: "64px" }}>
             {rest.map((article) => (
               <Link key={article.id} href={`/blog/${article.slug}`} className="card-light" style={{ display: "block", textDecoration: "none", overflow: "hidden" }}>
-                <div style={{ height: "180px", background: "linear-gradient(135deg, #181818 0%, #0D0D0D 100%)", display: "flex", alignItems: "center", justifyContent: "center", position: "relative", overflow: "hidden" }}>
-                  <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "3px", background: "linear-gradient(90deg, #C41A1A, #E02020)" }} />
-                  <svg width="40" height="40" viewBox="0 0 20 20" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="0.8" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 2H5a1.5 1.5 0 00-1.5 1.5v13A1.5 1.5 0 005 18h10a1.5 1.5 0 001.5-1.5V6L12 2z"/><path d="M12 2v4h4"/><path d="M7 10h6M7 13h4"/>
-                  </svg>
+                <div style={{ height: "180px", position: "relative", overflow: "hidden" }}>
+                  <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "3px", background: "linear-gradient(90deg, #C41A1A, #E02020)", zIndex: 1 }} />
+                  <Image src={article.image ?? "/images/gallery/18.jpg"} alt={article.title} fill sizes="340px" style={{ objectFit: "cover" }} />
+                  <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.3)" }} />
                 </div>
                 <div style={{ padding: "22px" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
@@ -100,6 +98,13 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
+
+      <style>{`
+        @media (max-width: 768px) {
+          .blog-featured-card { grid-template-columns: 1fr !important; }
+          .blog-featured-card > div:first-child { min-height: 200px !important; }
+        }
+      `}</style>
     </>
   );
 }

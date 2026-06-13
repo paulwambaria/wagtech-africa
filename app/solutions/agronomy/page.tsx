@@ -6,7 +6,7 @@ import { agronomyProducts } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Agronomy Solutions",
-  description: "Precision agronomy monitoring systems — weather stations, soil monitoring, and data management for African agricultural programs.",
+  description: "Precision agronomy monitoring systems, weather stations, soil monitoring, and data management for African agricultural programs.",
 };
 
 export default function AgronomyPage() {

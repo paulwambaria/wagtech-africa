@@ -1,4 +1,4 @@
-/* Central SVG icon library — no emojis */
+/* Central SVG icon library, no emojis */
 
 type IconProps = { size?: number; className?: string; stroke?: string };
 const def = { size: 20, stroke: "currentColor" };

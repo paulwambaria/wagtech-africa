@@ -96,7 +96,7 @@ export default async function ProductDetailPage(
                   </div>
                 </div>
                 <div style={{ padding: "18px 22px", display: "flex", flexDirection: "column", gap: "10px", background: "#fff" }}>
-                  {/* WhatsApp — primary */}
+                  {/* WhatsApp, primary */}
                   <a href={waUrl} target="_blank" rel="noopener noreferrer"
                     style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "10px", background: "#25D366", color: "#fff", fontWeight: 700, fontSize: "0.9rem", padding: "13px 20px", borderRadius: "10px", textDecoration: "none" }}>
                     <svg viewBox="0 0 24 24" fill="currentColor" style={{ width: "20px", height: "20px", flexShrink: 0 }}>

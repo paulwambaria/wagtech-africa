@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Environmental Monitoring Solutions",
-  description: "Comprehensive environmental monitoring solutions — air quality, water quality, soil analysis and multi-parameter environmental data systems across Africa.",
+  description: "Comprehensive environmental monitoring solutions, air quality, water quality, soil analysis and multi-parameter environmental data systems across Africa.",
 };
 
 export default function EnvironmentalPage() {
@@ -25,7 +25,7 @@ export default function EnvironmentalPage() {
             Environmental Monitoring
           </h1>
           <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "1.125rem", lineHeight: 1.75, maxWidth: "560px" }}>
-            Comprehensive environmental monitoring solutions — air quality, water quality, soil analysis and multi-parameter environmental data systems.
+            Comprehensive environmental monitoring solutions, air quality, water quality, soil analysis and multi-parameter environmental data systems.
           </p>
         </div>
       </PageBanner>

@@ -313,3 +313,39 @@ body {
 
 @keyframes spin-slow { to { transform: rotate(360deg); } }
 .spin-slow { animation: spin-slow 20s linear infinite; }
+
+/* ── Mobile Responsive ── */
+@media (max-width: 768px) {
+  .section { padding: 52px 0; }
+  .section-sm { padding: 32px 0; }
+
+  /* Utility: force single column */
+  .mobile-stack { grid-template-columns: 1fr !important; }
+  .mobile-hide  { display: none !important; }
+
+  /* Cards */
+  .card-light, .card-dark { border-radius: 10px; }
+
+  /* Buttons */
+  .btn-red, .btn-ghost-white, .btn-ghost-red, .btn-outline-dark {
+    font-size: 0.82rem;
+    padding: 11px 18px;
+  }
+
+  /* Stats ribbon numbers */
+  .stat-number { font-size: 1.8rem; }
+
+  /* Eyebrow labels */
+  .eyebrow { font-size: 10px; }
+}
+
+/* Topbar: hide contact links on small screens, keep phone */
+@media (max-width: 900px) {
+  .topbar-right { display: none !important; }
+  .topbar-tagline { display: none !important; }
+}
+
+/* Page banner headline */
+@media (max-width: 640px) {
+  h1 { font-size: clamp(1.8rem, 7vw, 2.6rem) !important; }
+}

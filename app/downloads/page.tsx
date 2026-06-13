@@ -43,7 +43,7 @@ export default function DownloadsPage() {
             Download Center
           </h1>
           <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "1.125rem", lineHeight: 1.75, maxWidth: "540px", marginLeft: "auto", marginRight: "auto" }}>
-            Access brochures, catalogues, technical documents, user manuals, and application notes — available in English and French.
+            Access brochures, catalogues, technical documents, user manuals, and application notes, available in English and French.
           </p>
         </div>
       </PageBanner>
@@ -52,7 +52,7 @@ export default function DownloadsPage() {
         <div className="wrap">
           {/* Filters */}
           <div style={{ background: "#111111", borderRadius: "16px", padding: "28px", marginBottom: "40px" }}>
-            <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr", gap: "16px", marginBottom: "16px" }}>
+            <div className="dl-filter-grid" style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr", gap: "16px", marginBottom: "16px" }}>
               <div>
                 <label style={{ display: "block", fontSize: "10px", fontWeight: 700, color: "rgba(255,255,255,0.5)", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "8px" }}>Search</label>
                 <div style={{ position: "relative" }}>
@@ -176,6 +176,15 @@ export default function DownloadsPage() {
           </div>
         </div>
       </section>
+
+      <style>{`
+        @media (max-width: 768px) {
+          .dl-filter-grid { grid-template-columns: 1fr 1fr !important; }
+        }
+        @media (max-width: 480px) {
+          .dl-filter-grid { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
     </>
   );
 }

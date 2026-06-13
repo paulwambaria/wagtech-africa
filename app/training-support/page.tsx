@@ -1,6 +1,7 @@
 import PageBanner from "@/components/PageBanner";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { trainingServices } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -35,7 +36,7 @@ export default function TrainingSupportPage() {
             Training &amp; Technical Support
           </h1>
           <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "1.125rem", lineHeight: 1.75, maxWidth: "560px" }}>
-            We support you from initial enquiry through to final installation, commissioning, training, and beyond — with in-house expertise across environmental sciences, analytical chemistry, agronomy, and engineering.
+            We support you from initial enquiry through to final installation, commissioning, training, and beyond, with in-house expertise across environmental sciences, analytical chemistry, agronomy, and engineering.
           </p>
         </div>
       </PageBanner>
@@ -49,11 +50,11 @@ export default function TrainingSupportPage() {
               End-to-End Customer Support
             </h2>
             <p style={{ color: "#6B7280", maxWidth: "540px", margin: "0 auto", lineHeight: 1.7 }}>
-              Complete technical support lifecycle — from procurement advice through installation, training, calibration, and ongoing maintenance.
+              Complete technical support lifecycle, from procurement advice through installation, training, calibration, and ongoing maintenance.
             </p>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px" }}>
+          <div className="ts-services-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px" }}>
             {trainingServices.map((svc) => {
               const iconKey = Object.keys(svcIcons).find((k) => svc.id?.includes(k) || svc.title?.toLowerCase().includes(k)) ?? "support";
               return (
@@ -92,7 +93,7 @@ export default function TrainingSupportPage() {
             </h2>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))", gap: "12px", marginBottom: "36px" }}>
+          <div className="ts-expertise-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))", gap: "12px", marginBottom: "36px" }}>
             {expertise.map((exp) => (
               <div key={exp.title} className="card-dark" style={{ padding: "24px", textAlign: "center" }}>
                 <div style={{ width: "48px", height: "48px", borderRadius: "12px", background: "rgba(196,26,26,0.1)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 14px" }}>
@@ -112,6 +113,16 @@ export default function TrainingSupportPage() {
         </div>
       </section>
 
+      {/* Field photo strip */}
+      <div style={{ display: "flex", height: "180px", overflow: "hidden", gap: "4px" }}>
+        {["/images/gallery/21.jpg","/images/gallery/17.jpg","/images/gallery/14.jpg","/images/gallery/22.jpg","/images/gallery/20.jpg"].map((src, i) => (
+          <div key={i} style={{ flex: 1, position: "relative", overflow: "hidden" }}>
+            <Image src={src} alt="Field training" fill sizes="20vw" style={{ objectFit: "cover" }} />
+            <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.2)" }} />
+          </div>
+        ))}
+      </div>
+
       {/* Process */}
       <section className="section" style={{ background: "#F8F8F8" }}>
         <div className="wrap">
@@ -122,7 +133,7 @@ export default function TrainingSupportPage() {
             </h2>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "14px" }}>
+          <div className="ts-process-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "14px" }}>
             {[
               { step: "01", title: "Enquiry & Assessment", desc: "We assess your requirements and recommend the most suitable solution for your application and budget." },
               { step: "02", title: "Procurement", desc: "We handle sourcing, import, customs clearance, and logistics to deliver equipment safely to your location." },
@@ -164,6 +175,14 @@ export default function TrainingSupportPage() {
           </div>
         </div>
       </section>
+
+      <style>{`
+        @media (max-width: 768px) {
+          .ts-services-grid { grid-template-columns: 1fr !important; }
+          .ts-expertise-grid { grid-template-columns: repeat(2, 1fr) !important; }
+          .ts-process-grid { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
     </>
   );
 }

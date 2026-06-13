@@ -6,7 +6,7 @@ import { waterProducts, agronomyProducts, hydrometProducts } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Products | Wagtech Africa",
-  description: "Browse Wagtech Africa's complete product catalogue — water quality systems, heavy metals analyzers, weather stations, agronomy monitoring, and more.",
+  description: "Browse Wagtech Africa's complete product catalogue: water quality systems, heavy metals analyzers, weather stations, agronomy monitoring, and more.",
 };
 
 const allSections = [
@@ -36,7 +36,7 @@ const allSections = [
   },
 ];
 
-// Categories not in data arrays — shown as tile links only
+// Categories not in data arrays, shown as tile links only
 const moreSolutions = [
   { label: "Environmental Monitoring", slug: "environmental",     image: "/images/gallery/04.jpg", desc: "Air, water, and soil environmental analysis." },
   { label: "Mobile Laboratories",      slug: "mobile-laboratories", image: "/images/gallery/21.jpg", desc: "Self-contained labs deployable anywhere." },
@@ -55,7 +55,7 @@ export default function ProductsPage() {
             World-Class Scientific Instruments
           </h1>
           <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "1.05rem", lineHeight: 1.75, maxWidth: "580px", marginLeft: "auto", marginRight: "auto" }}>
-            Over 1,000 products across water quality, environmental monitoring, agronomy, hydromet, and laboratory science — trusted by governments, NGOs, and researchers across Africa.
+            Over 1,000 products across water quality, environmental monitoring, agronomy, hydromet, and laboratory science, trusted by governments, NGOs, and researchers across Africa.
           </p>
         </div>
       </PageBanner>
@@ -70,7 +70,7 @@ export default function ProductsPage() {
             </h2>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "16px" }}>
+          <div className="prod-cat-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "16px" }}>
             {[...allSections, ...moreSolutions].map((cat) => (
               <Link key={cat.slug} href={`/solutions/${cat.slug}`}
                 style={{ display: "block", position: "relative", borderRadius: "14px", overflow: "hidden", textDecoration: "none", height: "220px" }}>
@@ -141,7 +141,7 @@ export default function ProductsPage() {
                       <span style={{ color: "#9CA3AF", fontSize: "12px", marginLeft: "auto" }}>{catProducts.length} products</span>
                     </div>
 
-                    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(270px, 1fr))", gap: "16px" }}>
+                    <div className="prod-items-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(270px, 1fr))", gap: "16px" }}>
                       {catProducts.map((product) => (
                         <div key={product.id} className="card-light" style={{ overflow: "hidden", display: "flex", flexDirection: "column" }}>
                           {/* Red accent top */}
@@ -208,6 +208,16 @@ export default function ProductsPage() {
           </section>
         );
       })}
+
+      <style>{`
+        @media (max-width: 768px) {
+          .prod-cat-grid { grid-template-columns: 1fr 1fr !important; }
+          .prod-items-grid { grid-template-columns: 1fr !important; }
+        }
+        @media (max-width: 480px) {
+          .prod-cat-grid { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
 
       {/* ── Bottom CTA ── */}
       <section style={{ background: "#111111", padding: "72px 0" }}>

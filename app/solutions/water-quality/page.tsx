@@ -6,7 +6,7 @@ import { waterProducts } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Water Quality Solutions",
-  description: "Portable and fixed water quality testing systems — AQUASAFE labs, METALYSER® heavy metals, MAJI multi-parameter probes and DEWMS monitoring platform.",
+  description: "Portable and fixed water quality testing systems, AQUASAFE labs, METALYSER® heavy metals, MAJI multi-parameter probes and DEWMS monitoring platform.",
 };
 
 export default function WaterQualityPage() {

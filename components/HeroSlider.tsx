@@ -16,7 +16,7 @@ const slides = [
     image: "/images/gallery/18.jpg",
     eyebrow: "Hydromet & Agronomy",
     headline: "WMO-Compliant Weather Stations for National Monitoring Networks",
-    sub: "From community flood early warning to premium TM100 networks — built for Africa's climate challenges.",
+    sub: "From community flood early warning to premium TM100 networks, built for Africa's climate challenges.",
     cta: { label: "View Hydromet Solutions", href: "/solutions/hydromet" },
     cta2: { label: "Download Catalogue", href: "/downloads" },
   },
@@ -24,7 +24,7 @@ const slides = [
     image: "/images/gallery/22.jpg",
     eyebrow: "Mobile Laboratories",
     headline: "Science Deployable to Any Location in Africa",
-    sub: "Self-contained mobile laboratories for water quality, environmental testing, and field analysis — anywhere on the continent.",
+    sub: "Self-contained mobile laboratories for water quality, environmental testing, and field analysis, anywhere on the continent.",
     cta: { label: "View Mobile Labs", href: "/solutions/mobile-laboratories" },
     cta2: { label: "Contact Our Team", href: "/contact" },
   },
@@ -80,7 +80,7 @@ export default function HeroSlider() {
             sizes="100vw"
             style={{ objectFit: "cover", objectPosition: "center" }}
           />
-          {/* Dark overlay — heavier at left for text readability */}
+          {/* Dark overlay, heavier at left for text readability */}
           <div style={{
             position: "absolute", inset: 0,
             background: "linear-gradient(105deg, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.55) 55%, rgba(0,0,0,0.15) 100%)",

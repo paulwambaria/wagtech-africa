@@ -100,7 +100,7 @@ export default function ContactPage() {
                 </svg>
                 <div>
                   <div style={{ fontWeight: 700, fontSize: "14px" }}>WhatsApp Chat</div>
-                  <div style={{ color: "rgba(255,255,255,0.8)", fontSize: "12px" }}>Fastest response — usually within hours</div>
+                  <div style={{ color: "rgba(255,255,255,0.8)", fontSize: "12px" }}>Fastest response, usually within hours</div>
                 </div>
               </a>
 
@@ -217,7 +217,7 @@ export default function ContactPage() {
             </svg>
           </div>
           <p style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 800, color: "#0D0D0D", fontSize: "1.1rem", marginBottom: "6px" }}>
-            Wagtech Africa — Karen, Nairobi
+            Wagtech Africa, Karen, Nairobi
           </p>
           <p style={{ color: "#6B7280", fontSize: "13px", marginBottom: "16px" }}>{company.address}</p>
           <a href="https://maps.google.com/?q=Karen,Nairobi,Kenya" target="_blank" rel="noopener noreferrer" className="btn-red" style={{ padding: "10px 20px", fontSize: "13px" }}>

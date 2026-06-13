@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Trace2O Solutions",
-  description: "Trace2O — Wagtech Africa's sister company offering a global range of innovative analytical instruments and complete turnkey monitoring solutions.",
+  description: "Trace2O, Wagtech Africa's sister company offering a global range of innovative analytical instruments and complete turnkey monitoring solutions.",
 };
 
 export default function Trace2OPage() {
@@ -38,7 +38,7 @@ export default function Trace2OPage() {
               Innovative Analytical Instruments
             </h2>
             <p style={{ color: "#6B7280", maxWidth: "580px", margin: "0 auto", lineHeight: 1.8 }}>
-              Trace2O is dedicated to developing next-generation analytical instruments that make high-quality analysis more affordable, accessible, and practical — backed by a global R&amp;D network.
+              Trace2O is dedicated to developing next-generation analytical instruments that make high-quality analysis more affordable, accessible, and practical, backed by a global R&amp;D network.
             </p>
           </div>
 

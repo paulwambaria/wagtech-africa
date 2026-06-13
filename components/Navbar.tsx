@@ -50,10 +50,10 @@ export default function Navbar() {
       {/* Top bar */}
       <div style={{ background: "#7B1515", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
         <div className="wrap" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "5px 0" }}>
-          <span style={{ color: "rgba(255,255,255,0.82)", fontSize: "10.5px", fontWeight: 500, letterSpacing: "0.02em" }}>
-            THE ORIGINAL BRAND SINCE 1990 — Africa&apos;s Trusted Scientific Solutions Partner
+          <span className="topbar-tagline" style={{ color: "rgba(255,255,255,0.82)", fontSize: "10.5px", fontWeight: 500, letterSpacing: "0.02em" }}>
+            THE ORIGINAL BRAND SINCE 1990 &middot; Africa&apos;s Trusted Scientific Solutions Partner
           </span>
-          <div style={{ display: "flex", alignItems: "center", gap: "14px", fontSize: "10.5px", color: "rgba(255,255,255,0.82)" }}>
+          <div className="topbar-right" style={{ display: "flex", alignItems: "center", gap: "14px", fontSize: "10.5px", color: "rgba(255,255,255,0.82)" }}>
             <a href="tel:+254797178605" style={{ color: "inherit", textDecoration: "none" }}>+254 797 178 605</a>
             <span style={{ opacity: 0.35 }}>|</span>
             <a href="mailto:info@wagtechafrica.com" style={{ color: "inherit", textDecoration: "none" }}>info@wagtechafrica.com</a>

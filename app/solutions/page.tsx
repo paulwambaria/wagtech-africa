@@ -1,11 +1,12 @@
 import PageBanner from "@/components/PageBanner";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { solutions } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Solutions",
-  description: "Explore Wagtech Africa's complete range of scientific solutions — water quality, agronomy, hydromet, environmental monitoring, mobile labs and more.",
+  description: "Explore Wagtech Africa's complete range of scientific solutions: water quality, agronomy, hydromet, environmental monitoring, mobile labs and more.",
 };
 
 const solutionIconPaths: Record<string, string> = {
@@ -36,7 +37,7 @@ export default function SolutionsPage() {
 
       <section className="section" style={{ background: "#fff" }}>
         <div className="wrap">
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px" }}>
+          <div className="sol-cards-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px" }}>
             {solutions.map((sol) => (
               <Link key={sol.id} href={`/solutions/${sol.slug}`} className="card-light" style={{ padding: "32px", display: "block", textDecoration: "none" }}>
                 <div style={{ width: "52px", height: "52px", borderRadius: "14px", background: "rgba(196,26,26,0.08)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "18px" }}>
@@ -62,6 +63,16 @@ export default function SolutionsPage() {
         </div>
       </section>
 
+      {/* Solution photo showcase strip */}
+      <div style={{ display: "flex", height: "180px", overflow: "hidden", gap: "4px" }}>
+        {["/images/gallery/22.jpg","/images/gallery/10.jpg","/images/gallery/21.jpg","/images/gallery/18.jpg","/images/gallery/04.jpg"].map((src, i) => (
+          <div key={i} style={{ flex: 1, position: "relative", overflow: "hidden" }}>
+            <Image src={src} alt="Solution showcase" fill sizes="20vw" style={{ objectFit: "cover" }} />
+            <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.2)" }} />
+          </div>
+        ))}
+      </div>
+
       <section style={{ background: "#C41A1A", padding: "80px 0" }}>
         <div className="wrap" style={{ textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 900, color: "#fff", fontSize: "clamp(2rem, 4vw, 2.8rem)", letterSpacing: "-0.03em", marginBottom: "16px" }}>
@@ -75,6 +86,12 @@ export default function SolutionsPage() {
           </Link>
         </div>
       </section>
+
+      <style>{`
+        @media (max-width: 768px) {
+          .sol-cards-grid { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
     </>
   );
 }

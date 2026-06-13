@@ -37,7 +37,7 @@ export const waterProducts = [
     image: "/images/products/wsl20.png",
     shortDesc: "Emergency response kit testing pH, free chlorine, total chlorine, turbidity, temperature, and fecal coliforms.",
     description:
-      "A compact emergency water safety laboratory in a single buoyant case format allowing easy carriage and fast deployment. The AQUASAFE WSL20 tests pH, free chlorine, total chlorine, turbidity, temperature, and fecal coliforms — everything needed for rapid water safety assessment in the field.",
+      "A compact emergency water safety laboratory in a single buoyant case format allowing easy carriage and fast deployment. The AQUASAFE WSL20 tests pH, free chlorine, total chlorine, turbidity, temperature, and fecal coliforms, everything needed for rapid water safety assessment in the field.",
     features: [
       "Tests pH, free chlorine, total chlorine, turbidity, temperature, fecal coliforms",
       "Single incubator with adjustable temperature settings",
@@ -56,7 +56,7 @@ export const waterProducts = [
     image: "/images/products/wsl25plus.png",
     shortDesc: "Next-generation portable water safety laboratory with HydroCheck HC1000 and HydroTest HT1000.",
     description:
-      "The next generation of portable water safety laboratory. The WSL25+ incorporates a single high-capacity incubator with PetriLok® technology, a lightweight hard anodized aluminum membrane filtration unit, and the HydroCheck HC1000 multi-parameter meter plus HydroTest HT1000 photometer — both IP68 waterproof.",
+      "The next generation of portable water safety laboratory. The WSL25+ incorporates a single high-capacity incubator with PetriLok® technology, a lightweight hard anodized aluminum membrane filtration unit, and the HydroCheck HC1000 multi-parameter meter plus HydroTest HT1000 photometer, both IP68 waterproof.",
     features: [
       "Single high-capacity incubator with PetriLok® technology",
       "Lightweight hard anodized aluminum membrane filtration unit",
@@ -485,7 +485,7 @@ export const hydrometProducts = [
     features: [
       "Air temperature", "Barometric pressure", "Rainfall intensity",
       "Relative humidity", "Solar radiation", "Wind direction", "Wind speed",
-      "Very low maintenance — no moving parts",
+      "Very low maintenance, no moving parts",
     ],
     applications: ["National meteorological networks", "Government weather agencies", "Climate research"],
     resources: [
@@ -548,7 +548,7 @@ export const hydrometProducts = [
     category: "Hydrometeorological Stations",
     slug: "tm50-hydro",
     image: "/images/products/tm50-hydro.jpg",
-    shortDesc: "Compact low-cost hydrological AWS — perfect for community flood early warning and reservoir monitoring.",
+    shortDesc: "Compact low-cost hydrological AWS, perfect for community flood early warning and reservoir monitoring.",
     description:
       "A compact, low-cost hydrological AWS perfect for small-scale community-based projects, such as flood early warning or reservoir monitoring. Features 2m mast with 6 sensors measuring 9 parameters including water temperature and water level.",
     specs: {
@@ -652,7 +652,7 @@ export const solutions = [
     slug: "trace2o",
     shortDesc: "Sister company offering a global range of innovative analytical and monitoring instruments.",
     description:
-      "Trace2O is our sister company — a global network of research, development, manufacturing and distribution centres providing cutting-edge analytical instruments.",
+      "Trace2O is our sister company, a global network of research, development, manufacturing and distribution centres providing cutting-edge analytical instruments.",
     productCount: 10,
     image: "/images/products/hm5000.png",
   },
@@ -738,7 +738,7 @@ export const industries = [
     title: "Public Health",
     description: "Water safety and microbiological testing equipment for public health agencies and hospitals.",
     icon: "check",
-    challenge: "Monitoring water safety at the last mile — from treatment plant to point of use.",
+    challenge: "Monitoring water safety at the last mile: from treatment plant to point of use.",
     solutions: ["AQUASAFE MSL series", "Aquatabs purification", "Maji monitoring systems"],
     products: ["aquasafe-msl25-pro", "aquasafe-msl50", "dewms"],
   },
@@ -775,7 +775,7 @@ export const projects = [
       "Weather stations installed across Malawi in collaboration with the Department of Climate Change and Meteorological Services (DCCMS).",
     equipment: "TM100, TM50 Meteorological Stations",
     industry: "Climate & Meteorology",
-    client: "DCCMS — Department of Climate Change and Meteorological Services",
+    client: "DCCMS (Department of Climate Change and Meteorological Services)",
     outcome: "40+ weather stations installed across the country",
   },
   {
@@ -787,7 +787,7 @@ export const projects = [
       "Sea buoy deployment initiative with Malawi's Department of Climate Change and Meteorological Services for lake water monitoring.",
     equipment: "Aquatic monitoring buoys, water quality sensors",
     industry: "Environmental Monitoring",
-    client: "DCCMS — Department of Climate Change and Meteorological Services",
+    client: "DCCMS (Department of Climate Change and Meteorological Services)",
     outcome: "Real-time lake monitoring data for climate research",
   },
   {
@@ -841,7 +841,7 @@ export const news = [
     date: "January 7, 2022",
     slug: "sea-buoy-malawi",
     excerpt:
-      "Another Wagtech Projects initiative with Malawi's Department of Climate Change and Meteorological Services (DCCMS) — lake monitoring buoy deployment.",
+      "Another Wagtech Projects initiative with Malawi's Department of Climate Change and Meteorological Services (DCCMS), lake monitoring buoy deployment.",
     category: "Projects",
     image: "/images/gallery/23.jpg",
   },
@@ -879,7 +879,7 @@ export const downloads = [
     size: "6 MB",
     url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/aquasafe-range.pdf",
     thumbnail: "/brochures/thumbnails/aquasafe-range.png",
-    description: "Portable Water Safety Laboratories — complete range overview",
+    description: "Portable Water Safety Laboratories, complete range overview",
   },
   {
     id: "metalyser-range-en",
@@ -891,7 +891,7 @@ export const downloads = [
     size: "3 MB",
     url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/metalyser-range.pdf",
     thumbnail: "/brochures/thumbnails/metalyser-range.png",
-    description: "Portable Trace Heavy Metal Analysers — full product range",
+    description: "Portable Trace Heavy Metal Analysers, full product range",
   },
   {
     id: "maji-systems-en",
@@ -903,7 +903,7 @@ export const downloads = [
     size: "8 MB",
     url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/maji-systems.pdf",
     thumbnail: "/brochures/thumbnails/maji-systems.png",
-    description: "Water Quality & Level Monitoring — Maji product range",
+    description: "Water Quality & Level Monitoring, Maji product range",
   },
   {
     id: "arsenometer-en",
@@ -939,7 +939,7 @@ export const downloads = [
     size: "4 MB",
     url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/hydromet-brochure.pdf",
     thumbnail: "/brochures/thumbnails/hydromet-brochure.png",
-    description: "Meteorological Applications — overview brochure",
+    description: "Meteorological Applications, overview brochure",
   },
   {
     id: "tracemet-stations-en",
@@ -951,7 +951,7 @@ export const downloads = [
     size: "10 MB",
     url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/tracemet-weather-stations.pdf",
     thumbnail: "/brochures/thumbnails/tracemet-weather-stations.png",
-    description: "Automatic Weather Stations — TM50, TM100, AGRO & HYDRO variants",
+    description: "Automatic Weather Stations, TM50, TM100, AGRO & HYDRO variants",
   },
   {
     id: "hydromet-catalogue-en",
@@ -1011,7 +1011,7 @@ export const downloads = [
     size: "5 MB",
     url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/asms-software.pdf",
     thumbnail: "/brochures/thumbnails/asms-software.png",
-    description: "The AquaSafe Management System (ASMS) — cloud-based dashboard",
+    description: "The AquaSafe Management System (ASMS), cloud-based dashboard",
   },
   {
     id: "asms-cloud-en",
@@ -1141,7 +1141,7 @@ export const partners = [
     id: "wagtech-projects",
     name: "Wagtech Projects UK",
     logo: "/images/partners/wagtech-projects.png",
-    description: "Parent company and global headquarters based in the UK — the original brand since 1990.",
+    description: "Parent company and global headquarters based in the UK, the original brand since 1990.",
     url: "https://www.wagtechprojects.com",
     relationship: "Parent Company",
   },
@@ -1150,7 +1150,7 @@ export const partners = [
     name: "Trace2O",
     logo: "/images/partners/trace2o.png",
     description:
-      "Sister company — a global network of research, development, manufacturing, and distribution centres offering complete turnkey analytical and monitoring solutions.",
+      "Sister company, a global network of research, development, manufacturing, and distribution centres offering complete turnkey analytical and monitoring solutions.",
     url: "https://www.trace2o.com",
     relationship: "Sister Company",
   },
@@ -1159,7 +1159,7 @@ export const partners = [
     name: "Bruker",
     logo: "/images/partners/bruker.svg",
     description:
-      "Leading manufacturer of scientific instruments — Wagtech Africa is an authorized distributor for Bruker's XRF, XRD, SCD, and MCT analytical instrument ranges.",
+      "Leading manufacturer of scientific instruments, Wagtech Africa is an authorized distributor for Bruker's XRF, XRD, SCD, and MCT analytical instrument ranges.",
     url: "https://www.bruker.com",
     relationship: "Technology Partner",
   },
@@ -1189,7 +1189,7 @@ export const trainingServices = [
     id: "technical-support",
     title: "Technical Support",
     description:
-      "Ongoing technical assistance from our team of environmental scientists, chemists, and engineers — from initial enquiry to post-sale support.",
+      "Ongoing technical assistance from our team of environmental scientists, chemists, and engineers. From initial enquiry to post-sale support.",
     features: ["Phone and email support", "Remote diagnostics", "Application advice", "Troubleshooting guidance"],
   },
   {

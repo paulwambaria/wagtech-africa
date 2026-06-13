@@ -25,7 +25,7 @@ export default function WaterPurificationPage() {
             Water Purification &amp; Sanitisation
           </h1>
           <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "1.125rem", lineHeight: 1.75, maxWidth: "560px" }}>
-            Water purification and sanitisation systems for communities, institutions, and humanitarian programs — ensuring safe drinking water across Africa.
+            Water purification and sanitisation systems for communities, institutions, and humanitarian programs, ensuring safe drinking water across Africa.
           </p>
         </div>
       </PageBanner>

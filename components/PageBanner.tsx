@@ -26,7 +26,7 @@ export default function PageBanner({ image, children }: PageBannerProps) {
         sizes="100vw"
         style={{ objectFit: "cover", objectPosition: "center" }}
       />
-      {/* Gradient overlay — heavy on the left for legibility, lighter on the right */}
+      {/* Gradient overlay, heavy on the left for legibility, lighter on the right */}
       <div style={{
         position: "absolute", inset: 0,
         background: "linear-gradient(105deg, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.68) 50%, rgba(0,0,0,0.38) 100%)",

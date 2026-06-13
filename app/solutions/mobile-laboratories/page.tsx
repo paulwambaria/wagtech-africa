@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Mobile Laboratories",
-  description: "Self-contained mobile laboratory systems for water quality, environmental testing, and scientific analysis — deployable to any location in Africa.",
+  description: "Self-contained mobile laboratory systems for water quality, environmental testing, and scientific analysis, deployable to any location in Africa.",
 };
 
 export default function MobileLaboratoriesPage() {
@@ -26,7 +26,7 @@ export default function MobileLaboratoriesPage() {
             Mobile Laboratories
           </h1>
           <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "1.125rem", lineHeight: 1.75, maxWidth: "560px" }}>
-            Self-contained mobile laboratory systems for water quality, environmental testing, and scientific analysis — deployable to any location in Africa.
+            Self-contained mobile laboratory systems for water quality, environmental testing, and scientific analysis, deployable to any location in Africa.
           </p>
         </div>
       </PageBanner>
@@ -40,7 +40,7 @@ export default function MobileLaboratoriesPage() {
                 Science Anywhere in Africa
               </h2>
               <p style={{ color: "#6B7280", lineHeight: 1.8, marginBottom: "16px" }}>
-                Wagtech Africa supplies self-contained mobile laboratories that bring professional analytical capabilities to any location — from remote humanitarian emergencies to rural water programs.
+                Wagtech Africa supplies self-contained mobile laboratories that bring professional analytical capabilities to any location, from remote humanitarian emergencies to rural water programs.
               </p>
               <p style={{ color: "#6B7280", lineHeight: 1.8, marginBottom: "32px" }}>
                 Our mobile labs are equipped with the latest water quality, environmental, and agricultural monitoring instruments and can be customized to your specific testing requirements and budget.
@@ -75,7 +75,7 @@ export default function MobileLaboratoriesPage() {
             Design Your Mobile Laboratory
           </h2>
           <p style={{ color: "#6B7280", marginBottom: "28px", lineHeight: 1.7 }}>
-            We custom-design mobile labs to your exact specifications — equipment selection, vehicle type, power systems, and data management.
+            We custom-design mobile labs to your exact specifications, equipment selection, vehicle type, power systems, and data management.
           </p>
           <Link href="/contact" className="btn-red">Start the Conversation</Link>
         </div>

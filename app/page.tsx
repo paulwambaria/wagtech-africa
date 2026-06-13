@@ -39,7 +39,7 @@ const featured = [
     category: "Hydromet & Weather",
     img: "/images/products/tm100.jpg",
     specs: ["WMO Compliant", "10m Mast", "7 Parameters"],
-    desc: "Premium WMO-compliant automatic weather station with no moving parts — ideal for national meteorological networks.",
+    desc: "Premium WMO-compliant automatic weather station with no moving parts, ideal for national meteorological networks.",
   },
   {
     slug: "maji-stat",
@@ -82,7 +82,7 @@ export default function HomePage() {
       {/* ── 2. STATS RIBBON ── */}
       <div style={{ background: "#C41A1A" }}>
         <div className="wrap" style={{ paddingTop: "0", paddingBottom: "0" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)" }}>
+          <div className="hp-stats-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)" }}>
             {stats.map((s, i) => (
               <div key={s.label} style={{
                 textAlign: "center", padding: "28px 20px",
@@ -98,7 +98,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* ── 3. SOLUTIONS — photo tile grid ── */}
+      {/* ── 3. SOLUTIONS, photo tile grid ── */}
       <section style={{ background: "#F8F8F8", padding: "88px 0" }}>
         <div className="wrap">
           <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", marginBottom: "48px", flexWrap: "wrap", gap: "16px" }}>
@@ -109,7 +109,7 @@ export default function HomePage() {
               </h2>
             </div>
             <p style={{ color: "#6B7280", maxWidth: "340px", lineHeight: 1.7, fontSize: "0.9rem" }}>
-              Eight specialised domains — from portable field labs to cloud-based early warning networks.
+              Eight specialised domains, from portable field labs to cloud-based early warning networks.
             </p>
           </div>
 
@@ -149,7 +149,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 4. ABOUT — split with photo collage ── */}
+      {/* ── 4. ABOUT, split with photo collage ── */}
       <section style={{ background: "#fff", padding: "96px 0", overflow: "hidden" }}>
         <div className="wrap">
           <div className="about-grid">
@@ -161,10 +161,10 @@ export default function HomePage() {
                 <span className="text-gradient">Since 1990</span>
               </h2>
               <p style={{ color: "#6B7280", lineHeight: 1.85, marginBottom: "16px", fontSize: "0.975rem" }}>
-                Wagtech Africa is the regional hub for Wagtech Projects UK — supplying affordable, high-quality scientific equipment and systems across water quality, environmental monitoring, agronomy, and laboratory science.
+                Wagtech Africa is the regional hub for Wagtech Projects UK, supplying affordable, high-quality scientific equipment and systems across water quality, environmental monitoring, agronomy, and laboratory science.
               </p>
               <p style={{ color: "#6B7280", lineHeight: 1.85, marginBottom: "40px", fontSize: "0.975rem" }}>
-                Our expertise spans Environmental Sciences, Analytical Chemistry, Agronomy, and Civil &amp; Public Health Engineering — supporting clients from initial enquiry through installation, training, and long-term support.
+                Our expertise spans Environmental Sciences, Analytical Chemistry, Agronomy, and Civil &amp; Public Health Engineering, supporting clients from initial enquiry through installation, training, and long-term support.
               </p>
 
               <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginBottom: "40px" }}>
@@ -243,7 +243,7 @@ export default function HomePage() {
               World-Class Scientific Instruments
             </h2>
             <p style={{ color: "#6B7280", maxWidth: "520px", margin: "0 auto", lineHeight: 1.7 }}>
-              Trusted by governments, NGOs, utilities and researchers across Africa — from portable emergency kits to research-grade systems.
+              Trusted by governments, NGOs, utilities and researchers across Africa, from portable emergency kits to research-grade systems.
             </p>
           </div>
 
@@ -288,7 +288,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 7. INDUSTRIES — dark with background photo ── */}
+      {/* ── 7. INDUSTRIES, dark with background photo ── */}
       <section style={{ background: "#0D0D0D", padding: "88px 0", position: "relative", overflow: "hidden" }}>
         {/* Faint background photo */}
         <div style={{ position: "absolute", inset: 0, pointerEvents: "none" }}>
@@ -367,7 +367,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 9. NEWS — featured article layout ── */}
+      {/* ── 9. NEWS, featured article layout ── */}
       <section style={{ background: "#F8F8F8", padding: "88px 0" }}>
         <div className="wrap">
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "40px", flexWrap: "wrap", gap: "12px" }}>
@@ -447,7 +447,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 10. CTA — photo background ── */}
+      {/* ── 10. CTA, photo background ── */}
       <section style={{ position: "relative", overflow: "hidden", padding: "100px 0" }}>
         <Image src="/images/gallery/10.jpg" alt="" fill sizes="100vw" style={{ objectFit: "cover" }} />
         <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.78)" }} />
@@ -480,7 +480,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Hover effects for image tiles */}
       <style>{`
         .about-grid {
           display: grid;
@@ -489,7 +488,7 @@ export default function HomePage() {
           align-items: start;
         }
         @media (max-width: 860px) {
-          .about-grid { grid-template-columns: 1fr; }
+          .about-grid { grid-template-columns: 1fr; gap: 32px; }
         }
         .news-grid {
           display: grid;
@@ -505,6 +504,13 @@ export default function HomePage() {
         .ind-card:hover .ind-img { transform: scale(1.06); }
         .strip-photo:hover .strip-img { transform: scale(1.08); }
         .featured-article:hover .featured-img { transform: scale(1.04); }
+        @media (max-width: 768px) {
+          .hp-stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
+          .hp-stats-grid > div { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.18); }
+          .hp-stats-grid > div:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.18) !important; }
+          .hp-stats-grid > div:nth-child(3),
+          .hp-stats-grid > div:nth-child(4) { border-bottom: none; }
+        }
       `}</style>
     </>
   );

@@ -19,7 +19,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Wagtech Africa — Water Quality, Environmental Monitoring & Laboratory Solutions",
+    default: "Wagtech Africa | Water Quality, Environmental Monitoring & Laboratory Solutions",
     template: "%s | Wagtech Africa",
   },
   description:
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.wagtechafrica.com",
     siteName: "Wagtech Africa",
-    title: "Wagtech Africa — Water Quality, Environmental Monitoring & Laboratory Solutions",
+    title: "Wagtech Africa | Water Quality, Environmental Monitoring & Laboratory Solutions",
     description:
       "Africa's trusted partner since 1990 for water quality testing, environmental monitoring, hydromet systems, and scientific instrumentation.",
   },

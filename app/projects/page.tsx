@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Wagtech Africa's project portfolio — weather stations, water quality systems, and environmental monitoring deployments across Africa.",
+  description: "Wagtech Africa's project portfolio: weather stations, water quality systems, and environmental monitoring deployments across Africa.",
 };
 
 /* Every project gets a real field photo */
@@ -29,7 +29,7 @@ const allProjects = [
     title: "National Weather Station Network",
     description: "40+ automatic weather stations installed across Malawi in collaboration with the Department of Climate Change and Meteorological Services, supporting climate research and early warning systems.",
     equipment: "TM100, TM50 Meteorological Stations",
-    client: "DCCMS — Dept. of Climate Change & Meteorological Services",
+    client: "DCCMS, Dept. of Climate Change & Meteorological Services",
     outcome: "40+ weather stations installed, national climate network established",
     industry: "Climate & Meteorology",
     image: "/images/gallery/10.jpg",
@@ -41,7 +41,7 @@ const allProjects = [
     title: "Lake Malawi Sea Buoy Deployment",
     description: "Sea buoy and river gauge deployment initiative with Malawi's Department of Climate Change and Meteorological Services for lake and river water monitoring, supporting hydrological research.",
     equipment: "Aquatic monitoring buoys, river gauges, water quality sensors",
-    client: "DCCMS — Dept. of Climate Change & Meteorological Services",
+    client: "DCCMS, Dept. of Climate Change & Meteorological Services",
     outcome: "Real-time lake and river monitoring data for climate research",
     industry: "Environmental Monitoring",
     image: "/images/gallery/17.jpg",
@@ -102,7 +102,7 @@ const allProjects = [
     description: "Design, manufacture, and deployment of a fleet of Toyota Hilux-mounted mobile laboratories for field-based water quality and environmental monitoring across East Africa.",
     equipment: "Toyota Hilux Mobile Labs, AQUASAFE systems, METALYSER® units",
     client: "Multiple government ministries & humanitarian organisations",
-    outcome: "Science deployable anywhere — remote water testing now possible in 20+ sites",
+    outcome: "Science deployable anywhere, remote water testing now possible in 20+ sites",
     industry: "Mobile Laboratories",
     image: "/images/gallery/21.jpg",
   },
@@ -123,7 +123,7 @@ const allProjects = [
     country: "Africa",
     flag: "🌍",
     title: "Land Rover Mobile Laboratory Build",
-    description: "Custom design and build of a Land Rover Defender-based mobile laboratory for remote field work — fitted with full water quality testing equipment and power systems.",
+    description: "Custom design and build of a Land Rover Defender-based mobile laboratory for remote field work, fitted with full water quality testing equipment and power systems.",
     equipment: "Land Rover Defender Lab, AQUASAFE, METALYSER® system",
     client: "Humanitarian field organisation",
     outcome: "Fully self-contained mobile lab reaching the most remote communities",
@@ -135,10 +135,10 @@ const allProjects = [
     country: "East Africa",
     flag: "🌍",
     title: "River & Borehole Water Quality Surveys",
-    description: "Deployment of multi-parameter water quality probes for comprehensive river, lake, and borehole surveys — providing rapid field data for WASH program planning.",
+    description: "Deployment of multi-parameter water quality probes for comprehensive river, lake, and borehole surveys, providing rapid field data for WASH program planning.",
     equipment: "MAJI multi-parameter probes, pH/ORP sensors, DEWMS loggers",
     client: "WASH programme implementers",
-    outcome: "Data-driven WASH planning — 200+ water sources tested per survey cycle",
+    outcome: "Data-driven WASH planning, 200+ water sources tested per survey cycle",
     industry: "Water & Sanitation",
     image: "/images/gallery/14.jpg",
   },
@@ -183,7 +183,7 @@ export default function ProjectsPage() {
             Projects Across Africa
           </h1>
           <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "1.125rem", lineHeight: 1.75, maxWidth: "640px", marginLeft: "auto", marginRight: "auto" }}>
-            From emergency water safety labs to national weather station networks — Wagtech Africa has delivered 500+ projects across more than 20 African countries.
+            From emergency water safety labs to national weather station networks, Wagtech Africa has delivered 500+ projects across more than 20 African countries.
           </p>
         </div>
       </PageBanner>
@@ -191,7 +191,7 @@ export default function ProjectsPage() {
       {/* ── Stats ribbon ── */}
       <div style={{ background: "#C41A1A" }}>
         <div className="wrap" style={{ paddingTop: "0", paddingBottom: "0" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)" }}>
+          <div className="proj-stats-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)" }}>
             {[
               { v: "500+",  l: "Projects Completed" },
               { v: "20+",   l: "African Countries" },
@@ -218,7 +218,7 @@ export default function ProjectsPage() {
           </div>
 
           {/* Top row: 1 large + 2 stacked */}
-          <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr", gap: "8px", marginBottom: "8px" }}>
+          <div className="proj-collage-top" style={{ display: "grid", gridTemplateColumns: "2fr 1fr", gap: "8px", marginBottom: "8px" }}>
             <div style={{ position: "relative", borderRadius: "14px", overflow: "hidden", height: "320px" }}>
               <Image src={collagePhotos[0].src} alt={collagePhotos[0].caption} fill sizes="66vw" style={{ objectFit: "cover" }} />
               <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 55%)" }} />
@@ -238,7 +238,7 @@ export default function ProjectsPage() {
           </div>
 
           {/* Bottom row: 3 equal */}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "8px" }}>
+          <div className="proj-collage-bottom" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "8px" }}>
             {collagePhotos.slice(3).map((p) => (
               <div key={p.src} style={{ position: "relative", borderRadius: "14px", overflow: "hidden", height: "190px" }}>
                 <Image src={p.src} alt={p.caption} fill sizes="33vw" style={{ objectFit: "cover" }} />
@@ -260,7 +260,7 @@ export default function ProjectsPage() {
             </h2>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))", gap: "20px" }}>
+          <div className="proj-cards-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))", gap: "20px" }}>
             {allProjects.map((project) => (
               <div key={project.id} className="card-light" style={{ overflow: "hidden", display: "flex", flexDirection: "column" }}>
                 {/* Cover photo */}
@@ -321,7 +321,7 @@ export default function ProjectsPage() {
             </h2>
             <p style={{ color: "rgba(255,255,255,0.45)", fontSize: "14px" }}>East, Central, West and North Africa</p>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))", gap: "8px" }}>
+          <div className="proj-countries-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))", gap: "8px" }}>
             {countries.map((c) => (
               <div key={c} className="card-dark" style={{ padding: "11px 16px", fontSize: "13px", color: "rgba(255,255,255,0.75)", textAlign: "center" }}>
                 {c}
@@ -351,7 +351,7 @@ export default function ProjectsPage() {
             Ready to Work With Us?
           </h2>
           <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "1.05rem", lineHeight: 1.7, marginBottom: "36px", maxWidth: "480px", marginLeft: "auto", marginRight: "auto" }}>
-            Wagtech Africa has extensive experience implementing government, NGO, and commercial scientific projects — from a single instrument to a national network.
+            Wagtech Africa has extensive experience implementing government, NGO, and commercial scientific projects, from a single instrument to a national network.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "12px" }}>
             <Link href="/contact" className="btn-red" style={{ padding: "14px 28px" }}>
@@ -362,6 +362,17 @@ export default function ProjectsPage() {
           </div>
         </div>
       </section>
+
+      <style>{`
+        @media (max-width: 768px) {
+          .proj-stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
+          .proj-stats-grid > div { border-right: none !important; }
+          .proj-collage-top { grid-template-columns: 1fr !important; }
+          .proj-collage-bottom { grid-template-columns: 1fr 1fr !important; }
+          .proj-cards-grid { grid-template-columns: 1fr !important; }
+          .proj-countries-grid { grid-template-columns: repeat(2, 1fr) !important; }
+        }
+      `}</style>
     </>
   );
 }

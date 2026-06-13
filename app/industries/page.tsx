@@ -1,6 +1,7 @@
 import PageBanner from "@/components/PageBanner";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Industries",
@@ -93,7 +94,7 @@ export default function IndustriesPage() {
             Industries We Serve
           </h1>
           <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "1.125rem", lineHeight: 1.75, maxWidth: "640px", marginLeft: "auto", marginRight: "auto" }}>
-            Wagtech Africa delivers scientific solutions across eight key sectors — from humanitarian aid to government agencies, mining operations to academic research.
+            Wagtech Africa delivers scientific solutions across eight key sectors, from humanitarian aid to government agencies, mining operations to academic research.
           </p>
         </div>
       </PageBanner>
@@ -102,7 +103,7 @@ export default function IndustriesPage() {
         <div className="wrap" style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
           {industryDetails.map((ind, i) => (
             <div key={ind.id} className="card-light" style={{ padding: "40px", background: i % 2 === 0 ? "#F8F8F8" : "#fff" }}>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "32px" }}>
+              <div className="ind-detail-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "32px" }}>
                 <div>
                   <div style={{ width: "52px", height: "52px", borderRadius: "14px", background: "rgba(196,26,26,0.08)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "16px" }}>
                     <svg width="24" height="24" viewBox="0 0 20 20" fill="none" stroke="#C41A1A" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
@@ -151,6 +152,22 @@ export default function IndustriesPage() {
           ))}
         </div>
       </section>
+
+      {/* Field photo strip */}
+      <div style={{ display: "flex", height: "160px", overflow: "hidden", gap: "4px" }}>
+        {["/images/gallery/22.jpg","/images/gallery/18.jpg","/images/gallery/10.jpg","/images/gallery/21.jpg","/images/gallery/04.jpg"].map((src, i) => (
+          <div key={i} style={{ flex: 1, position: "relative", overflow: "hidden" }}>
+            <Image src={src} alt="Industry field work" fill sizes="20vw" style={{ objectFit: "cover" }} />
+            <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.2)" }} />
+          </div>
+        ))}
+      </div>
+
+      <style>{`
+        @media (max-width: 900px) {
+          .ind-detail-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
+        }
+      `}</style>
     </>
   );
 }
