@@ -107,11 +107,11 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="section" style={{ background: "#0D0D0D" }}>
+      <section className="section" style={{ background: "#F8F8F8" }}>
         <div className="wrap">
           <div style={{ textAlign: "center", marginBottom: "52px" }}>
             <div className="eyebrow" style={{ justifyContent: "center" }}>Who We Are</div>
-            <h2 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontSize: "clamp(1.9rem, 3.5vw, 2.6rem)", fontWeight: 900, color: "#fff", letterSpacing: "-0.03em" }}>
+            <h2 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontSize: "clamp(1.9rem, 3.5vw, 2.6rem)", fontWeight: 900, color: "#0D0D0D", letterSpacing: "-0.03em" }}>
               Our Mission &amp; Vision
             </h2>
           </div>
@@ -120,7 +120,7 @@ export default function AboutPage() {
             {/* Mission */}
             <div style={{ background: "#C41A1A", borderRadius: "20px", padding: "44px 40px", position: "relative", overflow: "hidden" }}>
               <div style={{ position: "absolute", top: "-30px", right: "-30px", width: "140px", height: "140px", borderRadius: "50%", background: "rgba(255,255,255,0.05)" }} />
-              <div style={{ position: "absolute", bottom: "-50px", left: "-20px", width: "200px", height: "200px", borderRadius: "50%", background: "rgba(0,0,0,0.1)" }} />
+              <div style={{ position: "absolute", bottom: "-50px", left: "-20px", width: "200px", height: "200px", borderRadius: "50%", background: "rgba(0,0,0,0.08)" }} />
               <div style={{ position: "relative", zIndex: 1 }}>
                 <div style={{ width: "54px", height: "54px", borderRadius: "14px", background: "rgba(255,255,255,0.15)", border: "1px solid rgba(255,255,255,0.25)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "24px" }}>
                   <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -129,34 +129,34 @@ export default function AboutPage() {
                     <path d="M2 12l10 5 10-5"/>
                   </svg>
                 </div>
-                <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "rgba(255,255,255,0.65)", marginBottom: "12px" }}>Our Mission</div>
+                <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "rgba(255,255,255,0.7)", marginBottom: "12px" }}>Our Mission</div>
                 <h3 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 800, color: "#fff", fontSize: "1.45rem", lineHeight: 1.25, marginBottom: "18px", letterSpacing: "-0.02em" }}>
                   Empowering Africa Through Science
                 </h3>
-                <p style={{ color: "rgba(255,255,255,0.82)", fontSize: "15px", lineHeight: 1.75 }}>
-                  To be Africa&apos;s leading supplier of high-quality, affordable scientific equipment and monitoring solutions — enabling governments, water utilities, researchers, and humanitarian organisations to make data-driven decisions that protect lives and improve communities across the continent.
+                <p style={{ color: "rgba(255,255,255,0.88)", fontSize: "15px", lineHeight: 1.8 }}>
+                  To supply affordable, reliable scientific equipment and technical solutions to the water, environmental and agricultural sectors across Africa, helping our clients achieve the highest standards of quality and compliance in everything they do.
                 </p>
               </div>
             </div>
 
             {/* Vision */}
-            <div style={{ background: "#181818", border: "1px solid rgba(255,255,255,0.07)", borderRadius: "20px", padding: "44px 40px", position: "relative", overflow: "hidden" }}>
-              <div style={{ position: "absolute", top: "-30px", right: "-30px", width: "140px", height: "140px", borderRadius: "50%", background: "rgba(196,26,26,0.07)" }} />
-              <div style={{ position: "absolute", bottom: "-50px", left: "-20px", width: "200px", height: "200px", borderRadius: "50%", background: "rgba(196,26,26,0.04)" }} />
+            <div style={{ background: "#fff", border: "1px solid #E5E5E5", borderRadius: "20px", padding: "44px 40px", position: "relative", overflow: "hidden" }}>
+              <div style={{ position: "absolute", top: "-30px", right: "-30px", width: "140px", height: "140px", borderRadius: "50%", background: "rgba(196,26,26,0.04)" }} />
+              <div style={{ position: "absolute", bottom: "-50px", left: "-20px", width: "200px", height: "200px", borderRadius: "50%", background: "rgba(196,26,26,0.03)" }} />
               <div style={{ position: "relative", zIndex: 1 }}>
-                <div style={{ width: "54px", height: "54px", borderRadius: "14px", background: "rgba(196,26,26,0.12)", border: "1px solid rgba(196,26,26,0.25)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "24px" }}>
+                <div style={{ width: "54px", height: "54px", borderRadius: "14px", background: "rgba(196,26,26,0.08)", border: "1px solid rgba(196,26,26,0.15)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "24px" }}>
                   <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C41A1A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                     <circle cx="12" cy="12" r="10"/>
                     <circle cx="12" cy="12" r="3"/>
                     <path d="M12 2v3M12 19v3M2 12h3M19 12h3"/>
                   </svg>
                 </div>
-                <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "rgba(255,255,255,0.4)", marginBottom: "12px" }}>Our Vision</div>
-                <h3 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 800, color: "#fff", fontSize: "1.45rem", lineHeight: 1.25, marginBottom: "18px", letterSpacing: "-0.02em" }}>
-                  Clean Data for Every African Nation
+                <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "#C41A1A", marginBottom: "12px" }}>Our Vision</div>
+                <h3 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 800, color: "#0D0D0D", fontSize: "1.45rem", lineHeight: 1.25, marginBottom: "18px", letterSpacing: "-0.02em" }}>
+                  The Most Trusted Scientific Partner in Africa
                 </h3>
-                <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "15px", lineHeight: 1.75 }}>
-                  A future where every African nation has access to accurate, reliable scientific data — from clean water monitoring at the source, to weather intelligence that protects crops and communities — driving sustainable development and a healthier continent for generations to come.
+                <p style={{ color: "#6B7280", fontSize: "15px", lineHeight: 1.8 }}>
+                  To be recognised as the most trusted scientific solutions partner in Africa, known for the quality of our products, the depth of our technical expertise and our unwavering commitment to service excellence across every country we serve.
                 </p>
               </div>
             </div>
@@ -170,14 +170,14 @@ export default function AboutPage() {
               { label: "Innovation", desc: "Constantly evolving our product range to meet Africa's changing needs.", icon: "M10 2v2M10 16v2M2 10h2M16 10h2M4.22 4.22l1.41 1.41M14.37 14.37l1.41 1.41" },
               { label: "Impact", desc: "Every instrument we supply is a step towards cleaner water and safer communities.", icon: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" },
             ].map((v) => (
-              <div key={v.label} style={{ background: "#161616", border: "1px solid rgba(255,255,255,0.06)", borderRadius: "14px", padding: "24px 20px" }}>
-                <div style={{ width: "40px", height: "40px", borderRadius: "10px", background: "rgba(196,26,26,0.1)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "14px" }}>
+              <div key={v.label} className="card-light" style={{ padding: "24px 20px" }}>
+                <div style={{ width: "40px", height: "40px", borderRadius: "10px", background: "rgba(196,26,26,0.08)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "14px" }}>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C41A1A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                     <path d={v.icon} />
                   </svg>
                 </div>
-                <div style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 700, color: "#fff", fontSize: "0.95rem", marginBottom: "8px" }}>{v.label}</div>
-                <p style={{ color: "rgba(255,255,255,0.45)", fontSize: "12.5px", lineHeight: 1.65 }}>{v.desc}</p>
+                <div style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 700, color: "#0D0D0D", fontSize: "0.95rem", marginBottom: "8px" }}>{v.label}</div>
+                <p style={{ color: "#6B7280", fontSize: "12.5px", lineHeight: 1.65 }}>{v.desc}</p>
               </div>
             ))}
           </div>
