@@ -106,6 +106,84 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Mission & Vision */}
+      <section className="section" style={{ background: "#0D0D0D" }}>
+        <div className="wrap">
+          <div style={{ textAlign: "center", marginBottom: "52px" }}>
+            <div className="eyebrow" style={{ justifyContent: "center" }}>Who We Are</div>
+            <h2 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontSize: "clamp(1.9rem, 3.5vw, 2.6rem)", fontWeight: 900, color: "#fff", letterSpacing: "-0.03em" }}>
+              Our Mission &amp; Vision
+            </h2>
+          </div>
+
+          <div className="mv-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px" }}>
+            {/* Mission */}
+            <div style={{ background: "#C41A1A", borderRadius: "20px", padding: "44px 40px", position: "relative", overflow: "hidden" }}>
+              <div style={{ position: "absolute", top: "-30px", right: "-30px", width: "140px", height: "140px", borderRadius: "50%", background: "rgba(255,255,255,0.05)" }} />
+              <div style={{ position: "absolute", bottom: "-50px", left: "-20px", width: "200px", height: "200px", borderRadius: "50%", background: "rgba(0,0,0,0.1)" }} />
+              <div style={{ position: "relative", zIndex: 1 }}>
+                <div style={{ width: "54px", height: "54px", borderRadius: "14px", background: "rgba(255,255,255,0.15)", border: "1px solid rgba(255,255,255,0.25)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "24px" }}>
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                    <path d="M2 17l10 5 10-5"/>
+                    <path d="M2 12l10 5 10-5"/>
+                  </svg>
+                </div>
+                <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "rgba(255,255,255,0.65)", marginBottom: "12px" }}>Our Mission</div>
+                <h3 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 800, color: "#fff", fontSize: "1.45rem", lineHeight: 1.25, marginBottom: "18px", letterSpacing: "-0.02em" }}>
+                  Empowering Africa Through Science
+                </h3>
+                <p style={{ color: "rgba(255,255,255,0.82)", fontSize: "15px", lineHeight: 1.75 }}>
+                  To be Africa&apos;s leading supplier of high-quality, affordable scientific equipment and monitoring solutions — enabling governments, water utilities, researchers, and humanitarian organisations to make data-driven decisions that protect lives and improve communities across the continent.
+                </p>
+              </div>
+            </div>
+
+            {/* Vision */}
+            <div style={{ background: "#181818", border: "1px solid rgba(255,255,255,0.07)", borderRadius: "20px", padding: "44px 40px", position: "relative", overflow: "hidden" }}>
+              <div style={{ position: "absolute", top: "-30px", right: "-30px", width: "140px", height: "140px", borderRadius: "50%", background: "rgba(196,26,26,0.07)" }} />
+              <div style={{ position: "absolute", bottom: "-50px", left: "-20px", width: "200px", height: "200px", borderRadius: "50%", background: "rgba(196,26,26,0.04)" }} />
+              <div style={{ position: "relative", zIndex: 1 }}>
+                <div style={{ width: "54px", height: "54px", borderRadius: "14px", background: "rgba(196,26,26,0.12)", border: "1px solid rgba(196,26,26,0.25)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "24px" }}>
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C41A1A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M12 2v3M12 19v3M2 12h3M19 12h3"/>
+                  </svg>
+                </div>
+                <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "rgba(255,255,255,0.4)", marginBottom: "12px" }}>Our Vision</div>
+                <h3 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 800, color: "#fff", fontSize: "1.45rem", lineHeight: 1.25, marginBottom: "18px", letterSpacing: "-0.02em" }}>
+                  Clean Data for Every African Nation
+                </h3>
+                <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "15px", lineHeight: 1.75 }}>
+                  A future where every African nation has access to accurate, reliable scientific data — from clean water monitoring at the source, to weather intelligence that protects crops and communities — driving sustainable development and a healthier continent for generations to come.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Core values strip */}
+          <div className="mv-values" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "16px", marginTop: "24px" }}>
+            {[
+              { label: "Quality", desc: "We never compromise on the accuracy or reliability of our equipment.", icon: "M9 12l2 2 4-4M7 4H4a1 1 0 00-1 1v14a1 1 0 001 1h12a1 1 0 001-1V9l-5-5z" },
+              { label: "Integrity", desc: "Honest, transparent partnerships built on trust and decades of delivery.", icon: "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" },
+              { label: "Innovation", desc: "Constantly evolving our product range to meet Africa's changing needs.", icon: "M10 2v2M10 16v2M2 10h2M16 10h2M4.22 4.22l1.41 1.41M14.37 14.37l1.41 1.41" },
+              { label: "Impact", desc: "Every instrument we supply is a step towards cleaner water and safer communities.", icon: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" },
+            ].map((v) => (
+              <div key={v.label} style={{ background: "#161616", border: "1px solid rgba(255,255,255,0.06)", borderRadius: "14px", padding: "24px 20px" }}>
+                <div style={{ width: "40px", height: "40px", borderRadius: "10px", background: "rgba(196,26,26,0.1)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "14px" }}>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C41A1A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <path d={v.icon} />
+                  </svg>
+                </div>
+                <div style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 700, color: "#fff", fontSize: "0.95rem", marginBottom: "8px" }}>{v.label}</div>
+                <p style={{ color: "rgba(255,255,255,0.45)", fontSize: "12.5px", lineHeight: 1.65 }}>{v.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Expertise */}
       <section className="section" style={{ background: "#F8F8F8" }}>
         <div className="wrap">
@@ -271,6 +349,8 @@ export default function AboutPage() {
         @media (max-width: 768px) {
           .about-stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
           .about-story-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+          .mv-grid { grid-template-columns: 1fr !important; }
+          .mv-values { grid-template-columns: repeat(2, 1fr) !important; }
         }
       `}</style>
     </>
