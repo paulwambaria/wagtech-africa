@@ -37,6 +37,14 @@ export const metadata: Metadata = {
     "water safety laboratory",
   ],
   authors: [{ name: "Wagtech Africa" }],
+  icons: {
+    icon: [
+      { url: "/icon.png", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
