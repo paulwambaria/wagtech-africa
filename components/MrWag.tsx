@@ -16,6 +16,7 @@ const GREETING: Message = {
 
 export default function MrWag() {
   const [open, setOpen] = useState(false);
+  const [showPeek, setShowPeek] = useState(false);
   const [messages, setMessages] = useState<Message[]>([GREETING]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -23,9 +24,19 @@ export default function MrWag() {
   const endRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
+  // Show peek card for first-time visitors after 3 seconds
+  useEffect(() => {
+    const seen = localStorage.getItem("mrwag_seen");
+    if (!seen) {
+      const t = setTimeout(() => setShowPeek(true), 3000);
+      return () => clearTimeout(t);
+    }
+  }, []);
+
   useEffect(() => {
     if (open) {
       setUnread(false);
+      setShowPeek(false);
       setTimeout(() => inputRef.current?.focus(), 120);
     }
   }, [open]);
@@ -33,6 +44,23 @@ export default function MrWag() {
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, loading]);
+
+  function handleToggle() {
+    if (!open) localStorage.setItem("mrwag_seen", "true");
+    setShowPeek(false);
+    setOpen(!open);
+  }
+
+  function openFromPeek() {
+    localStorage.setItem("mrwag_seen", "true");
+    setShowPeek(false);
+    setOpen(true);
+  }
+
+  function dismissPeek() {
+    localStorage.setItem("mrwag_seen", "true");
+    setShowPeek(false);
+  }
 
   async function send() {
     const text = input.trim();
@@ -96,6 +124,48 @@ export default function MrWag() {
           0%,100% { transform: scale(1); }
           50% { transform: scale(1.2); }
         }
+
+        /* ── Peek card ── */
+        .mrwag-peek {
+          position: fixed; bottom: 100px; right: 24px; z-index: 998;
+          width: 300px; background: #fff; border-radius: 18px;
+          box-shadow: 0 16px 48px rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.06);
+          padding: 18px 16px 14px;
+          animation: peekIn 0.35s cubic-bezier(0.34,1.46,0.64,1) forwards;
+        }
+        @keyframes peekIn {
+          from { opacity: 0; transform: translateY(24px) scale(0.9); }
+          to   { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        .mrwag-peek::after {
+          content: "";
+          position: absolute; bottom: -8px; right: 28px;
+          width: 16px; height: 16px;
+          background: #fff;
+          border-right: 1px solid rgba(0,0,0,0.06);
+          border-bottom: 1px solid rgba(0,0,0,0.06);
+          transform: rotate(45deg);
+          border-radius: 0 0 3px 0;
+        }
+        .mrwag-peek-close {
+          position: absolute; top: 10px; right: 12px;
+          background: #F4F4F5; border: none; cursor: pointer;
+          width: 22px; height: 22px; border-radius: 50%;
+          font-size: 12px; color: #6B7280;
+          display: flex; align-items: center; justify-content: center;
+          transition: background 0.15s;
+          line-height: 1;
+        }
+        .mrwag-peek-close:hover { background: #E5E5E5; }
+        .mrwag-peek-start {
+          display: inline-flex; align-items: center; gap: 6px;
+          background: #C41A1A; color: #fff; border: none; cursor: pointer;
+          padding: 9px 16px; border-radius: 10px; font-size: 13px; font-weight: 600;
+          margin-top: 12px; transition: background 0.2s; font-family: inherit;
+        }
+        .mrwag-peek-start:hover { background: #A51515; }
+
+        /* ── Chat panel ── */
         .mrwag-panel {
           position: fixed; bottom: 100px; right: 24px; z-index: 998;
           width: 370px; max-height: 560px;
@@ -180,12 +250,42 @@ export default function MrWag() {
         .mrwag-send:disabled { background: #E5E5E5; cursor: default; }
         @media (max-width: 480px) {
           .mrwag-panel { width: calc(100vw - 20px); right: 10px; bottom: 90px; max-height: 70vh; }
+          .mrwag-peek  { width: calc(100vw - 80px); right: 10px; }
           .mrwag-btn { bottom: 18px; right: 18px; width: 54px; height: 54px; }
         }
       `}</style>
 
+      {/* First-visit peek card */}
+      {showPeek && !open && (
+        <div className="mrwag-peek">
+          <button className="mrwag-peek-close" onClick={dismissPeek} aria-label="Dismiss">✕</button>
+          <div style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
+            <div style={{ width: "44px", height: "44px", borderRadius: "50%", background: "linear-gradient(135deg,#7B1515,#C41A1A)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff">
+                <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+              </svg>
+            </div>
+            <div style={{ paddingTop: "2px" }}>
+              <div style={{ fontWeight: 800, fontSize: "14.5px", color: "#0D0D0D", fontFamily: "var(--font-jakarta,'Plus Jakarta Sans',system-ui,sans-serif)" }}>
+                Mr. Wag
+                <span style={{ marginLeft: "7px", background: "rgba(196,26,26,0.08)", color: "#C41A1A", fontSize: "10px", fontWeight: 700, padding: "2px 7px", borderRadius: "999px", letterSpacing: "0.06em", verticalAlign: "middle" }}>AI</span>
+              </div>
+              <div style={{ fontSize: "13px", color: "#444", marginTop: "6px", lineHeight: 1.5 }}>
+                Hi there! 👋 I&apos;m Mr. Wag — I can answer questions about our water quality labs, weather stations, and all Wagtech solutions. Happy to help!
+              </div>
+              <button className="mrwag-peek-start" onClick={openFromPeek}>
+                Start chatting
+                <svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M4 10h12M10 4l6 6-6 6"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Floating button */}
-      <button className="mrwag-btn" onClick={() => setOpen(!open)} aria-label="Chat with Mr. Wag">
+      <button className="mrwag-btn" onClick={handleToggle} aria-label="Chat with Mr. Wag">
         {open ? (
           <svg width="22" height="22" viewBox="0 0 20 20" fill="none" stroke="#fff" strokeWidth="2.2" strokeLinecap="round">
             <path d="M4 4l12 12M16 4L4 16"/>
@@ -209,7 +309,7 @@ export default function MrWag() {
               </svg>
             </div>
             <div style={{ flex: 1 }}>
-              <div style={{ color: "#fff", fontWeight: 800, fontSize: "15px", fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)" }}>
+              <div style={{ color: "#fff", fontWeight: 800, fontSize: "15px", fontFamily: "var(--font-jakarta,'Plus Jakarta Sans',system-ui,sans-serif)" }}>
                 Mr. Wag
               </div>
               <div style={{ color: "rgba(255,255,255,0.75)", fontSize: "11px", display: "flex", alignItems: "center", gap: "5px" }}>
