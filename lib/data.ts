@@ -46,7 +46,7 @@ export const waterProducts = [
       "Rechargeable battery pack with integrated docking station",
     ],
     applications: ["Emergency response", "Humanitarian aid", "Field water testing", "Rural water monitoring"],
-    resources: [{ type: "Brochure", label: "Download Brochure", url: "/brochures/en/aquasafe-range.pdf" }],
+    resources: [{ type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/aquasafe-range.pdf" }],
   },
   {
     id: "aquasafe-wsl25plus",
@@ -67,7 +67,7 @@ export const waterProducts = [
     ],
     applications: ["Field water quality testing", "Municipal water supply monitoring", "Aid sector deployment"],
     resources: [
-      { type: "Brochure", label: "Download Brochure", url: "/brochures/en/aquasafe-range.pdf" },
+      { type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/aquasafe-range.pdf" },
     ],
   },
   {
@@ -88,7 +88,7 @@ export const waterProducts = [
     ],
     applications: ["Large-scale water monitoring", "National water quality programs", "Municipal water utilities"],
     resources: [
-      { type: "Brochure", label: "Download Brochure", url: "/brochures/en/aquasafe-range.pdf" },
+      { type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/aquasafe-range.pdf" },
     ],
   },
   {
@@ -107,7 +107,7 @@ export const waterProducts = [
       "Compact form for easy field deployment",
     ],
     applications: ["Microbiological water testing", "Laboratory supplementation", "Field microbiology"],
-    resources: [{ type: "Brochure", label: "Download Brochure", url: "/brochures/en/aquasafe-range.pdf" }],
+    resources: [{ type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/aquasafe-range.pdf" }],
   },
   {
     id: "aquasafe-msl50",
@@ -125,7 +125,7 @@ export const waterProducts = [
     ],
     applications: ["Expanded microbiological capacity", "Research institutions", "Water utilities"],
     resources: [
-      { type: "Brochure", label: "Download Brochure", url: "/brochures/en/aquasafe-range.pdf" },
+      { type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/aquasafe-range.pdf" },
     ],
   },
   {
@@ -145,7 +145,7 @@ export const waterProducts = [
     ],
     applications: ["Field heavy metals screening", "Water quality assessment", "Environmental monitoring"],
     resources: [
-      { type: "Brochure", label: "Download Brochure", url: "/brochures/en/metalyser-range.pdf" },
+      { type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/metalyser-range.pdf" },
     ],
   },
   {
@@ -164,7 +164,7 @@ export const waterProducts = [
       "Flexible solution for comprehensive heavy metal screening",
     ],
     applications: ["Drinking water quality testing", "Industrial effluent monitoring", "Environmental compliance"],
-    resources: [{ type: "Brochure", label: "Download Brochure", url: "/brochures/en/metalyser-range.pdf" }],
+    resources: [{ type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/metalyser-range.pdf" }],
   },
   {
     id: "metalyser-hm3000",
@@ -188,7 +188,7 @@ export const waterProducts = [
       "Industrial monitoring",
     ],
     resources: [
-      { type: "Brochure", label: "Download Brochure", url: "/brochures/en/metalyser-range.pdf" },
+      { type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/metalyser-range.pdf" },
     ],
   },
   {
@@ -208,7 +208,7 @@ export const waterProducts = [
     ],
     applications: ["Cost-effective field screening", "Agronomy", "Soil analysis", "Water quality testing"],
     resources: [
-      { type: "Brochure", label: "Download Brochure", url: "/brochures/en/metalyser-range.pdf" },
+      { type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/metalyser-range.pdf" },
     ],
   },
   {
@@ -229,7 +229,7 @@ export const waterProducts = [
       "Suitable for academic and research use",
     ],
     applications: ["Academic research", "Post-graduate studies", "Industrial R&D", "Reference laboratory testing"],
-    resources: [{ type: "Brochure", label: "Download Brochure", url: "/brochures/en/metalyser-range.pdf" }],
+    resources: [{ type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/metalyser-range.pdf" }],
   },
   {
     id: "arsenometer-hmas100",
@@ -248,7 +248,7 @@ export const waterProducts = [
     ],
     applications: ["Arsenic contamination screening", "Drinking water safety", "Groundwater monitoring"],
     resources: [
-      { type: "Brochure", label: "Download Brochure", url: "/brochures/en/arsenometer.pdf" },
+      { type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/arsenometer.pdf" },
     ],
   },
   {
@@ -267,7 +267,7 @@ export const waterProducts = [
       "Single-parameter portable design",
     ],
     applications: ["Field water quality checks", "Environmental surveys", "Water utilities"],
-    resources: [{ type: "Brochure", label: "Download Brochure", url: "/brochures/en/maji-systems.pdf" }],
+    resources: [{ type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/maji-systems.pdf" }],
   },
   {
     id: "maji-1000",
@@ -285,7 +285,7 @@ export const waterProducts = [
       "Complete package supplied",
     ],
     applications: ["Multi-parameter water testing", "River and lake monitoring", "Field surveys"],
-    resources: [{ type: "Brochure", label: "Download Brochure", url: "/brochures/en/maji-systems.pdf" }],
+    resources: [{ type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/maji-systems.pdf" }],
   },
   {
     id: "maji-3000",
@@ -302,7 +302,7 @@ export const waterProducts = [
       "Portable or long-term deployment capability",
     ],
     applications: ["Long-term water monitoring", "River quality surveys", "Environmental compliance"],
-    resources: [{ type: "Brochure", label: "Download Brochure", url: "/brochures/en/maji-systems.pdf" }],
+    resources: [{ type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/maji-systems.pdf" }],
   },
   {
     id: "maji-sonde",
@@ -321,7 +321,7 @@ export const waterProducts = [
       "PC/laptop configuration software included",
     ],
     applications: ["Long-term autonomous monitoring", "River and lake deployment", "Environmental surveys"],
-    resources: [{ type: "Brochure", label: "Download Brochure", url: "/brochures/en/maji-systems.pdf" }],
+    resources: [{ type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/maji-systems.pdf" }],
   },
   {
     id: "maji-stat",
@@ -340,7 +340,7 @@ export const waterProducts = [
       "One-year access to online data management hub",
     ],
     applications: ["Fixed water quality monitoring stations", "River monitoring networks", "Water utility surveillance"],
-    resources: [{ type: "Brochure", label: "Download Brochure", url: "/brochures/en/maji-systems.pdf" }],
+    resources: [{ type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/maji-systems.pdf" }],
   },
   {
     id: "dewms",
@@ -359,7 +359,7 @@ export const waterProducts = [
       "Flood warning and water quality analysis",
     ],
     applications: ["Flood early warning", "National water monitoring", "Climate resilience programs"],
-    resources: [{ type: "Brochure", label: "Download Brochure", url: "/brochures/en/maji-systems.pdf" }],
+    resources: [{ type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/maji-systems.pdf" }],
   },
 ];
 
@@ -382,7 +382,7 @@ export const agronomyProducts = [
       "Auto software monitors up to 25 stations",
     ],
     applications: ["Crop disease management", "Precision agriculture", "Agricultural research", "Irrigation management"],
-    resources: [{ type: "Brochure", label: "Download Brochure", url: "/brochures/en/agronomy-catalogue.pdf" }],
+    resources: [{ type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/agronomy-catalogue.pdf" }],
   },
   {
     id: "hydrological-monitoring-ag31-300",
@@ -400,7 +400,7 @@ export const agronomyProducts = [
       "Portable between sites",
     ],
     applications: ["Watershed management", "Flood monitoring", "Irrigation planning", "Agricultural water management"],
-    resources: [{ type: "Brochure", label: "Download Brochure", url: "/brochures/en/agronomy-catalogue.pdf" }],
+    resources: [{ type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/agronomy-catalogue.pdf" }],
   },
   {
     id: "soil-conditions-ag31-500",
@@ -418,7 +418,7 @@ export const agronomyProducts = [
       "3 gypsum block sensors (3m cables)",
     ],
     applications: ["Soil moisture management", "Irrigation scheduling", "Drought research", "Crop yield optimization"],
-    resources: [{ type: "Brochure", label: "Download Brochure", url: "/brochures/en/agronomy-catalogue.pdf" }],
+    resources: [{ type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/agronomy-catalogue.pdf" }],
   },
   {
     id: "metalyser-hm4000-agro",
@@ -437,7 +437,7 @@ export const agronomyProducts = [
     ],
     applications: ["Soil contamination screening", "Agricultural land assessment", "Fertilizer quality testing"],
     resources: [
-      { type: "Brochure", label: "Download Brochure", url: "/brochures/en/metalyser-range.pdf" },
+      { type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/metalyser-range.pdf" },
     ],
   },
 ];
@@ -463,8 +463,8 @@ export const hydrometProducts = [
     ],
     applications: ["Local business weather monitoring", "School weather stations", "Small-scale agriculture"],
     resources: [
-      { type: "Brochure", label: "Download Brochure", url: "/brochures/en/tracemet-weather-stations.pdf" },
-      { type: "Catalogue", label: "Hydromet Catalogue", url: "/brochures/en/hydromet-catalogue.pdf" },
+      { type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/tracemet-weather-stations.pdf" },
+      { type: "Catalogue", label: "Hydromet Catalogue", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/hydromet-catalogue.pdf" },
     ],
   },
   {
@@ -489,8 +489,8 @@ export const hydrometProducts = [
     ],
     applications: ["National meteorological networks", "Government weather agencies", "Climate research"],
     resources: [
-      { type: "Brochure", label: "Download Brochure", url: "/brochures/en/tracemet-weather-stations.pdf" },
-      { type: "Catalogue", label: "Hydromet Catalogue", url: "/brochures/en/hydromet-catalogue.pdf" },
+      { type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/tracemet-weather-stations.pdf" },
+      { type: "Catalogue", label: "Hydromet Catalogue", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/hydromet-catalogue.pdf" },
     ],
   },
   {
@@ -513,8 +513,8 @@ export const hydrometProducts = [
     ],
     applications: ["Precision agriculture", "Crop disease monitoring", "Irrigation management"],
     resources: [
-      { type: "Brochure", label: "Download Brochure", url: "/brochures/en/tracemet-weather-stations.pdf" },
-      { type: "Catalogue", label: "Agronomy Catalogue", url: "/brochures/en/agronomy-catalogue.pdf" },
+      { type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/tracemet-weather-stations.pdf" },
+      { type: "Catalogue", label: "Agronomy Catalogue", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/agronomy-catalogue.pdf" },
     ],
   },
   {
@@ -538,8 +538,8 @@ export const hydrometProducts = [
     ],
     applications: ["Government agricultural programs", "National agronomy networks", "Climate change adaptation"],
     resources: [
-      { type: "Brochure", label: "Download Brochure", url: "/brochures/en/tracemet-weather-stations.pdf" },
-      { type: "Catalogue", label: "Agronomy Catalogue", url: "/brochures/en/agronomy-catalogue.pdf" },
+      { type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/tracemet-weather-stations.pdf" },
+      { type: "Catalogue", label: "Agronomy Catalogue", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/agronomy-catalogue.pdf" },
     ],
   },
   {
@@ -563,8 +563,8 @@ export const hydrometProducts = [
     ],
     applications: ["Community flood warning", "Reservoir monitoring", "Small watershed management"],
     resources: [
-      { type: "Brochure", label: "Download Brochure", url: "/brochures/en/tracemet-weather-stations.pdf" },
-      { type: "Catalogue", label: "Hydromet Catalogue", url: "/brochures/en/hydromet-catalogue.pdf" },
+      { type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/tracemet-weather-stations.pdf" },
+      { type: "Catalogue", label: "Hydromet Catalogue", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/hydromet-catalogue.pdf" },
     ],
   },
   {
@@ -589,8 +589,8 @@ export const hydrometProducts = [
     ],
     applications: ["National hydrological networks", "Government water management", "River basin monitoring"],
     resources: [
-      { type: "Brochure", label: "Download Brochure", url: "/brochures/en/tracemet-weather-stations.pdf" },
-      { type: "Catalogue", label: "Hydromet Catalogue", url: "/brochures/en/hydromet-catalogue.pdf" },
+      { type: "Brochure", label: "Download Brochure", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/tracemet-weather-stations.pdf" },
+      { type: "Catalogue", label: "Hydromet Catalogue", url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/hydromet-catalogue.pdf" },
     ],
   },
 ];
@@ -877,7 +877,7 @@ export const downloads = [
     language: "English",
     format: "PDF",
     size: "6 MB",
-    url: "/brochures/en/aquasafe-range.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/aquasafe-range.pdf",
     thumbnail: "/brochures/thumbnails/aquasafe-range.png",
     description: "Portable Water Safety Laboratories — complete range overview",
   },
@@ -889,7 +889,7 @@ export const downloads = [
     language: "English",
     format: "PDF",
     size: "3 MB",
-    url: "/brochures/en/metalyser-range.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/metalyser-range.pdf",
     thumbnail: "/brochures/thumbnails/metalyser-range.png",
     description: "Portable Trace Heavy Metal Analysers — full product range",
   },
@@ -901,7 +901,7 @@ export const downloads = [
     language: "English",
     format: "PDF",
     size: "8 MB",
-    url: "/brochures/en/maji-systems.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/maji-systems.pdf",
     thumbnail: "/brochures/thumbnails/maji-systems.png",
     description: "Water Quality & Level Monitoring — Maji product range",
   },
@@ -913,7 +913,7 @@ export const downloads = [
     language: "English",
     format: "PDF",
     size: "2 MB",
-    url: "/brochures/en/arsenometer.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/arsenometer.pdf",
     thumbnail: "/brochures/thumbnails/arsenometer.png",
     description: "Portable Arsenic Testing Kit",
   },
@@ -925,7 +925,7 @@ export const downloads = [
     language: "English",
     format: "PDF",
     size: "2 MB",
-    url: "/brochures/en/leadometer.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/leadometer.pdf",
     thumbnail: "/brochures/thumbnails/leadometer.png",
     description: "Portable Lead Testing Kit",
   },
@@ -937,7 +937,7 @@ export const downloads = [
     language: "English",
     format: "PDF",
     size: "4 MB",
-    url: "/brochures/en/hydromet-brochure.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/hydromet-brochure.pdf",
     thumbnail: "/brochures/thumbnails/hydromet-brochure.png",
     description: "Meteorological Applications — overview brochure",
   },
@@ -949,7 +949,7 @@ export const downloads = [
     language: "English",
     format: "PDF",
     size: "10 MB",
-    url: "/brochures/en/tracemet-weather-stations.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/tracemet-weather-stations.pdf",
     thumbnail: "/brochures/thumbnails/tracemet-weather-stations.png",
     description: "Automatic Weather Stations — TM50, TM100, AGRO & HYDRO variants",
   },
@@ -961,7 +961,7 @@ export const downloads = [
     language: "English",
     format: "PDF",
     size: "4 MB",
-    url: "/brochures/en/hydromet-catalogue.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/hydromet-catalogue.pdf",
     thumbnail: "/brochures/thumbnails/hydromet-catalogue.png",
     description: "Integrated Field Systems for Weather and Climate Monitoring",
   },
@@ -973,7 +973,7 @@ export const downloads = [
     language: "English",
     format: "PDF",
     size: "11 MB",
-    url: "/brochures/en/agronomy-catalogue.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/agronomy-catalogue.pdf",
     thumbnail: "/brochures/thumbnails/agronomy-catalogue.png",
     description: "Instruments for Agricultural Sciences",
   },
@@ -985,7 +985,7 @@ export const downloads = [
     language: "English",
     format: "PDF",
     size: "10 MB",
-    url: "/brochures/en/mobile-laboratories.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/mobile-laboratories.pdf",
     thumbnail: "/brochures/thumbnails/mobile-laboratories.png",
     description: "Our Full Range of Mobile Laboratory Systems",
   },
@@ -997,7 +997,7 @@ export const downloads = [
     language: "English",
     format: "PDF",
     size: "4 MB",
-    url: "/brochures/en/aquatabs.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/aquatabs.pdf",
     thumbnail: "/brochures/thumbnails/aquatabs.png",
     description: "Water Purification and Disinfectant Solutions",
   },
@@ -1009,7 +1009,7 @@ export const downloads = [
     language: "English",
     format: "PDF",
     size: "5 MB",
-    url: "/brochures/en/asms-software.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/asms-software.pdf",
     thumbnail: "/brochures/thumbnails/asms-software.png",
     description: "The AquaSafe Management System (ASMS) — cloud-based dashboard",
   },
@@ -1021,7 +1021,7 @@ export const downloads = [
     language: "English",
     format: "PDF",
     size: "5 MB",
-    url: "/brochures/en/asms-cloud-dashboard.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/asms-cloud-dashboard.pdf",
     thumbnail: "/brochures/thumbnails/asms-cloud-dashboard.png",
     description: "Cloud-Based Dashboard for AquaSafe Management System",
   },
@@ -1033,7 +1033,7 @@ export const downloads = [
     language: "English",
     format: "PDF",
     size: "5 MB",
-    url: "/brochures/en/environmental-brochure.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/environmental-brochure.pdf",
     thumbnail: "/brochures/thumbnails/environmental-brochure.png",
     description: "Environmental Monitoring Solutions",
   },
@@ -1045,7 +1045,7 @@ export const downloads = [
     language: "English",
     format: "PDF",
     size: "2 MB",
-    url: "/brochures/en/maji-brochure.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/maji-brochure.pdf",
     thumbnail: "/brochures/thumbnails/maji-brochure.png",
     description: "Water Quality & Level Monitoring Systems",
   },
@@ -1057,7 +1057,7 @@ export const downloads = [
     language: "English",
     format: "PDF",
     size: "112 MB",
-    url: "/brochures/en/water-brochure.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/water-brochure.pdf",
     thumbnail: "/brochures/thumbnails/water-brochure.png",
     description: "Full Water Quality Equipment Catalogue",
   },
@@ -1070,7 +1070,7 @@ export const downloads = [
     language: "French",
     format: "PDF",
     size: "25 MB",
-    url: "/brochures/fr/aquasafe-range-fr.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/aquasafe-range-fr.pdf",
     thumbnail: "/brochures/thumbnails/aquasafe-range-fr.png",
     description: "Laboratoires Portables de Sécurité de l'Eau",
   },
@@ -1082,7 +1082,7 @@ export const downloads = [
     language: "French",
     format: "PDF",
     size: "6 MB",
-    url: "/brochures/fr/maji-systems-fr.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/maji-systems-fr.pdf",
     thumbnail: "/brochures/thumbnails/maji-systems-fr.png",
     description: "Surveillance de la Qualité et du Niveau de l'Eau",
   },
@@ -1094,7 +1094,7 @@ export const downloads = [
     language: "French",
     format: "PDF",
     size: "15 MB",
-    url: "/brochures/fr/metalyser-range-fr.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/metalyser-range-fr.pdf",
     thumbnail: "/brochures/thumbnails/metalyser-range-fr.png",
     description: "Analyseurs Portables de Métaux Lourds",
   },
@@ -1106,7 +1106,7 @@ export const downloads = [
     language: "French",
     format: "PDF",
     size: "14 MB",
-    url: "/brochures/fr/mobile-laboratories-fr.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/mobile-laboratories-fr.pdf",
     thumbnail: "/brochures/thumbnails/mobile-laboratories-fr.png",
     description: "Notre Gamme Complète de Laboratoires Mobiles",
   },
@@ -1118,7 +1118,7 @@ export const downloads = [
     language: "French",
     format: "PDF",
     size: "12 MB",
-    url: "/brochures/fr/agronomy-catalogue-fr.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/agronomy-catalogue-fr.pdf",
     thumbnail: "/brochures/thumbnails/agronomy-catalogue-fr.png",
     description: "Instruments pour les Sciences Agricoles",
   },
@@ -1130,7 +1130,7 @@ export const downloads = [
     language: "French",
     format: "PDF",
     size: "28 MB",
-    url: "/brochures/fr/hydromet-fr.pdf",
+    url: "https://github.com/paulwambaria/wagtech-africa/releases/download/v1.0-assets/hydromet-fr.pdf",
     thumbnail: "/brochures/thumbnails/hydromet-fr.png",
     description: "Systèmes Intégrés pour la Surveillance Météorologique et Climatique",
   },
