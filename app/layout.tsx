@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MrWag from "@/components/MrWag";
+import Preloader from "@/components/Preloader";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -68,6 +69,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <MrWag />
+        <Preloader />
       </body>
     </html>
   );
