@@ -115,7 +115,7 @@ export default function DownloadsPage() {
                     <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0)", transition: "background 0.2s" }}
                       onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "rgba(0,0,0,0.35)"; }}
                       onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "rgba(0,0,0,0)"; }}>
-                      <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: "44px", height: "44px", borderRadius: "50%", background: "#800000", display: "flex", alignItems: "center", justifyContent: "center", opacity: 0, transition: "opacity 0.2s" }}
+                      <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: "44px", height: "44px", borderRadius: "50%", background: "#C41A1A", display: "flex", alignItems: "center", justifyContent: "center", opacity: 0, transition: "opacity 0.2s" }}
                         onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.opacity = "1"; }}
                         onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.opacity = "0"; }}>
                         <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -134,7 +134,7 @@ export default function DownloadsPage() {
                   {/* Content */}
                   <div style={{ padding: "16px 18px", flex: 1, display: "flex", flexDirection: "column" }}>
                     <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "8px" }}>
-                      <span style={{ fontSize: "10px", color: "#800000", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em" }}>
+                      <span style={{ fontSize: "10px", color: "#C41A1A", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em" }}>
                         {doc.category}
                       </span>
                       <div style={{ display: "flex", gap: "5px", alignItems: "center" }}>

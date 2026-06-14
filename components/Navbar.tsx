@@ -48,7 +48,7 @@ export default function Navbar() {
       }}
     >
       {/* Top bar */}
-      <div style={{ background: "#5C0000", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
+      <div style={{ background: "#7B1515", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
         <div className="wrap" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "5px 0" }}>
           <span className="topbar-tagline" style={{ color: "rgba(255,255,255,0.82)", fontSize: "10.5px", fontWeight: 500, letterSpacing: "0.02em" }}>
             THE ORIGINAL BRAND SINCE 1990 &middot; Africa&apos;s Trusted Scientific Solutions Partner
@@ -81,7 +81,7 @@ export default function Navbar() {
               <div style={{ color: "#fff", fontWeight: 800, fontSize: "0.95rem", lineHeight: 1.1, fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", letterSpacing: "-0.01em" }}>
                 Wagtech Africa
               </div>
-              <div style={{ color: "#800000", fontSize: "9px", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", marginTop: "3px" }}>
+              <div style={{ color: "#C41A1A", fontSize: "9px", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", marginTop: "3px" }}>
                 Trace2O · Since 1990
               </div>
             </div>
@@ -113,7 +113,7 @@ export default function Navbar() {
                     {item.children.map((child) => (
                       <Link key={child.href} href={child.href}
                         style={{ display: "block", padding: "8px 13px", color: "rgba(255,255,255,0.7)", fontSize: "13px", textDecoration: "none", borderRadius: "8px", transition: "background 0.12s, color 0.12s" }}
-                        onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "rgba(128,0,0,0.1)"; (e.currentTarget as HTMLElement).style.color = "#fff"; }}
+                        onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "rgba(196,26,26,0.1)"; (e.currentTarget as HTMLElement).style.color = "#fff"; }}
                         onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "transparent"; (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.7)"; }}
                       >
                         {child.label}

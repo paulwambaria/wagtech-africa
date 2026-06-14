@@ -189,7 +189,7 @@ export default function ProjectsPage() {
       </PageBanner>
 
       {/* ── Stats ribbon ── */}
-      <div style={{ background: "#800000" }}>
+      <div style={{ background: "#C41A1A" }}>
         <div className="wrap" style={{ paddingTop: "0", paddingBottom: "0" }}>
           <div className="proj-stats-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)" }}>
             {[
@@ -268,7 +268,7 @@ export default function ProjectsPage() {
                   <Image src={project.image} alt={project.title} fill sizes="400px" style={{ objectFit: "cover" }} />
                   <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.1) 60%, transparent 100%)" }} />
                   {/* Red top accent */}
-                  <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "3px", background: "linear-gradient(90deg,#800000,#950000)" }} />
+                  <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "3px", background: "linear-gradient(90deg,#C41A1A,#E02020)" }} />
                   {/* Flag + industry */}
                   <div style={{ position: "absolute", top: "14px", left: "14px", display: "flex", alignItems: "center", gap: "8px" }}>
                     <span style={{ fontSize: "1.4rem" }}>{project.flag}</span>
@@ -297,7 +297,7 @@ export default function ProjectsPage() {
                     ].map((row) => (
                       <div key={row.label} style={{ display: "flex", gap: "10px", fontSize: "12.5px" }}>
                         <span style={{ color: "#9CA3AF", width: "72px", flexShrink: 0, fontWeight: 500 }}>{row.label}</span>
-                        <span style={{ color: row.highlight ? "#800000" : "#374151", fontWeight: row.highlight ? 600 : 400, lineHeight: 1.5 }}>{row.value}</span>
+                        <span style={{ color: row.highlight ? "#C41A1A" : "#374151", fontWeight: row.highlight ? 600 : 400, lineHeight: 1.5 }}>{row.value}</span>
                       </div>
                     ))}
                   </div>

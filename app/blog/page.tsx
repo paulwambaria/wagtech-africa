@@ -59,7 +59,7 @@ export default function BlogPage() {
             {rest.map((article) => (
               <Link key={article.id} href={`/blog/${article.slug}`} className="card-light" style={{ display: "block", textDecoration: "none", overflow: "hidden" }}>
                 <div style={{ height: "180px", position: "relative", overflow: "hidden" }}>
-                  <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "3px", background: "linear-gradient(90deg, #800000, #950000)", zIndex: 1 }} />
+                  <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "3px", background: "linear-gradient(90deg, #C41A1A, #E02020)", zIndex: 1 }} />
                   <Image src={article.image ?? "/images/gallery/18.jpg"} alt={article.title} fill sizes="340px" style={{ objectFit: "cover" }} />
                   <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.3)" }} />
                 </div>
@@ -74,7 +74,7 @@ export default function BlogPage() {
                   <p style={{ color: "#6B7280", fontSize: "13px", lineHeight: 1.7, display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical", overflow: "hidden", marginBottom: "14px" }}>
                     {article.excerpt}
                   </p>
-                  <span style={{ color: "#800000", fontSize: "12px", fontWeight: 700 }}>Read More →</span>
+                  <span style={{ color: "#C41A1A", fontSize: "12px", fontWeight: 700 }}>Read More →</span>
                 </div>
               </Link>
             ))}

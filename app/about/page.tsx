@@ -34,7 +34,7 @@ export default function AboutPage() {
       </PageBanner>
 
       {/* Stats bar */}
-      <div style={{ background: "#800000" }}>
+      <div style={{ background: "#C41A1A" }}>
         <div className="wrap" style={{ paddingTop: "28px", paddingBottom: "28px" }}>
           <div className="about-stats-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "20px" }}>
             {stats.map((s) => (
@@ -95,7 +95,7 @@ export default function AboutPage() {
               </div>
 
               {/* HQ info card */}
-              <div style={{ background: "#800000", borderRadius: "14px", padding: "24px 28px" }}>
+              <div style={{ background: "#C41A1A", borderRadius: "14px", padding: "24px 28px" }}>
                 <h3 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 700, color: "#fff", fontSize: "1rem", marginBottom: "10px" }}>Regional Headquarters</h3>
                 <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "13px", lineHeight: 1.7, marginBottom: "6px" }}>{company.address}</p>
                 <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "13px" }}>{company.phones.join(" | ")}</p>
@@ -118,7 +118,7 @@ export default function AboutPage() {
 
           <div className="mv-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px" }}>
             {/* Mission */}
-            <div style={{ background: "#800000", borderRadius: "20px", padding: "44px 40px", position: "relative", overflow: "hidden" }}>
+            <div style={{ background: "#C41A1A", borderRadius: "20px", padding: "44px 40px", position: "relative", overflow: "hidden" }}>
               <div style={{ position: "absolute", top: "-30px", right: "-30px", width: "140px", height: "140px", borderRadius: "50%", background: "rgba(255,255,255,0.05)" }} />
               <div style={{ position: "absolute", bottom: "-50px", left: "-20px", width: "200px", height: "200px", borderRadius: "50%", background: "rgba(0,0,0,0.08)" }} />
               <div style={{ position: "relative", zIndex: 1 }}>
@@ -141,17 +141,17 @@ export default function AboutPage() {
 
             {/* Vision */}
             <div style={{ background: "#fff", border: "1px solid #E5E5E5", borderRadius: "20px", padding: "44px 40px", position: "relative", overflow: "hidden" }}>
-              <div style={{ position: "absolute", top: "-30px", right: "-30px", width: "140px", height: "140px", borderRadius: "50%", background: "rgba(128,0,0,0.04)" }} />
-              <div style={{ position: "absolute", bottom: "-50px", left: "-20px", width: "200px", height: "200px", borderRadius: "50%", background: "rgba(128,0,0,0.03)" }} />
+              <div style={{ position: "absolute", top: "-30px", right: "-30px", width: "140px", height: "140px", borderRadius: "50%", background: "rgba(196,26,26,0.04)" }} />
+              <div style={{ position: "absolute", bottom: "-50px", left: "-20px", width: "200px", height: "200px", borderRadius: "50%", background: "rgba(196,26,26,0.03)" }} />
               <div style={{ position: "relative", zIndex: 1 }}>
-                <div style={{ width: "54px", height: "54px", borderRadius: "14px", background: "rgba(128,0,0,0.08)", border: "1px solid rgba(128,0,0,0.15)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "24px" }}>
-                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#800000" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <div style={{ width: "54px", height: "54px", borderRadius: "14px", background: "rgba(196,26,26,0.08)", border: "1px solid rgba(196,26,26,0.15)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "24px" }}>
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C41A1A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                     <circle cx="12" cy="12" r="10"/>
                     <circle cx="12" cy="12" r="3"/>
                     <path d="M12 2v3M12 19v3M2 12h3M19 12h3"/>
                   </svg>
                 </div>
-                <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "#800000", marginBottom: "12px" }}>Our Vision</div>
+                <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "#C41A1A", marginBottom: "12px" }}>Our Vision</div>
                 <h3 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 800, color: "#0D0D0D", fontSize: "1.45rem", lineHeight: 1.25, marginBottom: "18px", letterSpacing: "-0.02em" }}>
                   The Most Trusted Scientific Partner in Africa
                 </h3>
@@ -171,8 +171,8 @@ export default function AboutPage() {
               { label: "Impact", desc: "Every instrument we supply is a step towards cleaner water and safer communities.", icon: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" },
             ].map((v) => (
               <div key={v.label} className="card-light" style={{ padding: "24px 20px" }}>
-                <div style={{ width: "40px", height: "40px", borderRadius: "10px", background: "rgba(128,0,0,0.08)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "14px" }}>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#800000" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <div style={{ width: "40px", height: "40px", borderRadius: "10px", background: "rgba(196,26,26,0.08)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "14px" }}>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C41A1A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                     <path d={v.icon} />
                   </svg>
                 </div>
@@ -200,8 +200,8 @@ export default function AboutPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "16px" }}>
             {expertiseIcons.map((exp) => (
               <div key={exp.title} className="card-light" style={{ padding: "28px", textAlign: "center" }}>
-                <div style={{ width: "52px", height: "52px", borderRadius: "14px", background: "rgba(128,0,0,0.08)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 16px" }}>
-                  <svg width="24" height="24" viewBox="0 0 20 20" fill="none" stroke="#800000" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                <div style={{ width: "52px", height: "52px", borderRadius: "14px", background: "rgba(196,26,26,0.08)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 16px" }}>
+                  <svg width="24" height="24" viewBox="0 0 20 20" fill="none" stroke="#C41A1A" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
                     <path d={exp.path} />
                     {exp.circle && <circle cx="10" cy="10" r="7.5" />}
                   </svg>
@@ -244,8 +244,8 @@ export default function AboutPage() {
               { title: "Tender Implementation", desc: "Extensive experience implementing government and NGO tender contracts across Africa.", iconPath: "M12 2H5a1.5 1.5 0 00-1.5 1.5v13A1.5 1.5 0 005 18h10a1.5 1.5 0 001.5-1.5V6L12 2z" },
             ].map((svc) => (
               <div key={svc.title} style={{ display: "flex", gap: "16px", background: "#F8F8F8", borderRadius: "14px", padding: "24px" }}>
-                <div style={{ width: "44px", height: "44px", borderRadius: "12px", background: "rgba(128,0,0,0.08)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#800000" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                <div style={{ width: "44px", height: "44px", borderRadius: "12px", background: "rgba(196,26,26,0.08)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#C41A1A" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
                     <path d={svc.iconPath} />
                   </svg>
                 </div>
@@ -275,10 +275,10 @@ export default function AboutPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "12px" }}>
             {company.regions.map((region) => (
               <div key={region} className="card-dark" style={{ padding: "20px 24px", display: "flex", alignItems: "center", gap: "14px" }}>
-                <div style={{ width: "36px", height: "36px", borderRadius: "9px", background: "rgba(128,0,0,0.15)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                  <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="#800000" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                <div style={{ width: "36px", height: "36px", borderRadius: "9px", background: "rgba(196,26,26,0.15)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="#C41A1A" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M10 2a5 5 0 00-5 5c0 4 5 10 5 10s5-6 5-10a5 5 0 00-5-5z"/>
-                    <circle cx="10" cy="7" r="1.5" fill="#800000"/>
+                    <circle cx="10" cy="7" r="1.5" fill="#C41A1A"/>
                   </svg>
                 </div>
                 <span style={{ color: "#fff", fontWeight: 500, fontSize: "14px" }}>{region}</span>
@@ -317,7 +317,7 @@ export default function AboutPage() {
                   <div className="eyebrow" style={{ marginBottom: "8px" }}>{p.relationship}</div>
                   <h3 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 800, color: "#0D0D0D", fontSize: "1.05rem", marginBottom: "10px" }}>{p.name}</h3>
                   <p style={{ color: "#6B7280", fontSize: "13.5px", lineHeight: 1.7, marginBottom: "16px" }}>{p.description}</p>
-                  <span style={{ color: "#800000", fontSize: "13px", fontWeight: 600 }}>Visit Website →</span>
+                  <span style={{ color: "#C41A1A", fontSize: "13px", fontWeight: 600 }}>Visit Website →</span>
                 </div>
               </a>
             ))}
@@ -326,7 +326,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section style={{ background: "#800000", padding: "80px 0" }}>
+      <section style={{ background: "#C41A1A", padding: "80px 0" }}>
         <div className="wrap" style={{ textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontSize: "clamp(2rem, 4vw, 2.8rem)", fontWeight: 900, color: "#fff", letterSpacing: "-0.03em", marginBottom: "16px" }}>
             Work With Wagtech Africa
@@ -335,7 +335,7 @@ export default function AboutPage() {
             Get expert guidance on the right scientific equipment and monitoring solutions for your project.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "12px" }}>
-            <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#fff", color: "#800000", fontWeight: 700, padding: "14px 28px", borderRadius: "10px", textDecoration: "none", fontSize: "14px" }}>
+            <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#fff", color: "#C41A1A", fontWeight: 700, padding: "14px 28px", borderRadius: "10px", textDecoration: "none", fontSize: "14px" }}>
               Contact Us Today
             </Link>
             <Link href="/training-support" className="btn-ghost-white" style={{ padding: "14px 28px" }}>

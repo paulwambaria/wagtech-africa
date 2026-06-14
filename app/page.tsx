@@ -91,7 +91,7 @@ export default function HomePage() {
       <HeroSlider />
 
       {/* ── 2. STATS RIBBON ── */}
-      <div style={{ background: "#800000" }}>
+      <div style={{ background: "#C41A1A" }}>
         <div className="wrap" style={{ paddingTop: "0", paddingBottom: "0" }}>
           <div className="hp-stats-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)" }}>
             {stats.map((s, i) => (
@@ -153,16 +153,16 @@ export default function HomePage() {
                 {/* Overlay gradient */}
                 <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.35) 55%, rgba(0,0,0,0.05) 100%)" }} />
                 {/* Red line top */}
-                <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "2px", background: "linear-gradient(90deg,#800000,transparent)" }} />
+                <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "2px", background: "linear-gradient(90deg,#C41A1A,transparent)" }} />
                 <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "22px 20px" }}>
-                  <div style={{ fontSize: "10px", fontWeight: 700, letterSpacing: "0.14em", color: "#950000", textTransform: "uppercase", marginBottom: "7px" }}>
+                  <div style={{ fontSize: "10px", fontWeight: 700, letterSpacing: "0.14em", color: "#E02020", textTransform: "uppercase", marginBottom: "7px" }}>
                     {sol.productCount}+ products
                   </div>
                   <div style={{ fontFamily: "var(--font-jakarta,'Plus Jakarta Sans',system-ui,sans-serif)", fontWeight: 800, color: "#fff", fontSize: "1.05rem", lineHeight: 1.2, marginBottom: "8px" }}>
                     {sol.title}
                   </div>
                   <div style={{ color: "rgba(255,255,255,0.55)", fontSize: "12px", lineHeight: 1.55, marginBottom: "14px" }}>{sol.shortDesc}</div>
-                  <span style={{ display: "inline-flex", alignItems: "center", gap: "5px", fontSize: "11px", fontWeight: 700, color: "#800000" }}>
+                  <span style={{ display: "inline-flex", alignItems: "center", gap: "5px", fontSize: "11px", fontWeight: 700, color: "#C41A1A" }}>
                     Explore
                     <svg width="11" height="11" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
                   </span>
@@ -198,8 +198,8 @@ export default function HomePage() {
                   { n: "30+", label: "Years of field experience" },
                   { n: "1000+", label: "Products available in our catalogue" },
                 ].map((item) => (
-                  <div key={item.label} style={{ display: "flex", alignItems: "center", gap: "14px", padding: "14px 18px", background: "#F8F8F8", borderRadius: "10px", borderLeft: "3px solid #800000" }}>
-                    <span style={{ fontFamily: "var(--font-jakarta,'Plus Jakarta Sans',system-ui,sans-serif)", fontWeight: 900, fontSize: "1.3rem", color: "#800000", minWidth: "52px" }}>{item.n}</span>
+                  <div key={item.label} style={{ display: "flex", alignItems: "center", gap: "14px", padding: "14px 18px", background: "#F8F8F8", borderRadius: "10px", borderLeft: "3px solid #C41A1A" }}>
+                    <span style={{ fontFamily: "var(--font-jakarta,'Plus Jakarta Sans',system-ui,sans-serif)", fontWeight: 900, fontSize: "1.3rem", color: "#C41A1A", minWidth: "52px" }}>{item.n}</span>
                     <span style={{ color: "#374151", fontSize: "0.875rem", fontWeight: 500 }}>{item.label}</span>
                   </div>
                 ))}
@@ -229,7 +229,7 @@ export default function HomePage() {
                 </div>
                 <div style={{ position: "relative", borderRadius: "14px", overflow: "hidden" }}>
                   <Image src="/images/gallery/22.jpg" alt="Field water quality testing" fill sizes="280px" style={{ objectFit: "cover" }} />
-                  <div style={{ position: "absolute", inset: 0, background: "rgba(128,0,0,0.25)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <div style={{ position: "absolute", inset: 0, background: "rgba(196,26,26,0.25)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                     <div style={{ textAlign: "center" }}>
                       <div style={{ color: "#fff", fontFamily: "var(--font-jakarta,'Plus Jakarta Sans',system-ui,sans-serif)", fontWeight: 900, fontSize: "1.5rem" }}>30+</div>
                       <div style={{ color: "rgba(255,255,255,0.85)", fontSize: "11px", fontWeight: 600 }}>Years in Africa</div>
@@ -254,7 +254,7 @@ export default function HomePage() {
         </div>
         <div className="wrap" style={{ paddingTop: "18px", paddingBottom: "18px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <span style={{ color: "rgba(255,255,255,0.4)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase" }}>Trusted deployments across 20+ African countries</span>
-          <Link href="/projects" style={{ color: "#800000", fontSize: "12px", fontWeight: 700, textDecoration: "none" }}>View Projects →</Link>
+          <Link href="/projects" style={{ color: "#C41A1A", fontSize: "12px", fontWeight: 700, textDecoration: "none" }}>View Projects →</Link>
         </div>
       </div>
 
@@ -274,7 +274,7 @@ export default function HomePage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(300px,1fr))", gap: "18px" }}>
             {featured.map((p) => (
               <div key={p.slug} className="card-light" style={{ overflow: "hidden", display: "flex", flexDirection: "column" }}>
-                <div style={{ height: "3px", background: "linear-gradient(90deg,#800000,#950000)" }} />
+                <div style={{ height: "3px", background: "linear-gradient(90deg,#C41A1A,#E02020)" }} />
                 {/* Product image */}
                 <div style={{ background: "#fff", display: "flex", alignItems: "center", justifyContent: "center", padding: "24px 20px", height: "190px", borderBottom: "1px solid #F0F0F0" }}>
                   <Image src={p.img} alt={p.name} width={220} height={150} style={{ objectFit: "contain", maxHeight: "150px" }} />
@@ -287,11 +287,11 @@ export default function HomePage() {
                   <p style={{ color: "#6B7280", fontSize: "0.825rem", lineHeight: 1.7, marginBottom: "14px", flex: 1 }}>{p.desc}</p>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: "5px", marginBottom: "16px" }}>
                     {p.specs.map((s) => (
-                      <span key={s} style={{ fontSize: "10px", fontWeight: 700, padding: "3px 9px", borderRadius: "999px", background: "rgba(128,0,0,0.07)", color: "#800000", border: "1px solid rgba(128,0,0,0.15)" }}>{s}</span>
+                      <span key={s} style={{ fontSize: "10px", fontWeight: 700, padding: "3px 9px", borderRadius: "999px", background: "rgba(196,26,26,0.07)", color: "#C41A1A", border: "1px solid rgba(196,26,26,0.15)" }}>{s}</span>
                     ))}
                   </div>
                   <div style={{ display: "flex", gap: "8px", paddingTop: "14px", borderTop: "1px solid #F0F0F0" }}>
-                    <Link href={`/products/${p.slug}`} style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: "5px", fontSize: "12px", fontWeight: 600, color: "#800000", textDecoration: "none", padding: "8px", borderRadius: "8px", border: "1px solid rgba(128,0,0,0.2)", background: "rgba(128,0,0,0.04)" }}>
+                    <Link href={`/products/${p.slug}`} style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: "5px", fontSize: "12px", fontWeight: 600, color: "#C41A1A", textDecoration: "none", padding: "8px", borderRadius: "8px", border: "1px solid rgba(196,26,26,0.2)", background: "rgba(196,26,26,0.04)" }}>
                       Read More
                     </Link>
                     <Link href="/contact" className="btn-red" style={{ fontSize: "12px", padding: "8px 16px" }}>
@@ -318,7 +318,7 @@ export default function HomePage() {
         <div style={{ position: "absolute", inset: 0, pointerEvents: "none" }}>
           <Image src="/images/gallery/07.jpg" alt="" fill sizes="100vw" style={{ objectFit: "cover", opacity: 0.08 }} />
         </div>
-        <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 70% 60% at 50% 50%, rgba(92,0,0,0.22) 0%, transparent 70%)", pointerEvents: "none" }} />
+        <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 70% 60% at 50% 50%, rgba(124,21,21,0.22) 0%, transparent 70%)", pointerEvents: "none" }} />
 
         <div className="wrap" style={{ position: "relative" }}>
           <div style={{ textAlign: "center", marginBottom: "56px" }}>
@@ -388,7 +388,7 @@ export default function HomePage() {
                 <Image src={item.src} alt={item.label} fill sizes="(max-width:768px) 100vw, 400px" style={{ objectFit: "cover" }} />
                 <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.72) 0%, transparent 55%)" }} />
                 <div style={{ position: "absolute", bottom: "14px", left: "14px" }}>
-                  <span style={{ fontSize: "9px", fontWeight: 700, color: "#fff", background: "#800000", padding: "3px 9px", borderRadius: "999px", letterSpacing: "0.1em", textTransform: "uppercase" }}>{item.cat}</span>
+                  <span style={{ fontSize: "9px", fontWeight: 700, color: "#fff", background: "#C41A1A", padding: "3px 9px", borderRadius: "999px", letterSpacing: "0.1em", textTransform: "uppercase" }}>{item.cat}</span>
                   <div style={{ color: "#fff", fontWeight: 600, fontSize: "13px", marginTop: "6px" }}>{item.label}</div>
                 </div>
               </div>
@@ -425,10 +425,10 @@ export default function HomePage() {
                 </div>
                 {/* Content */}
                 <div style={{ padding: "20px 24px", flex: 1 }}>
-                  <div style={{ fontSize: "10px", fontWeight: 700, color: "#800000", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "6px" }}>{p.relationship}</div>
+                  <div style={{ fontSize: "10px", fontWeight: 700, color: "#C41A1A", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "6px" }}>{p.relationship}</div>
                   <h3 style={{ fontFamily: "var(--font-jakarta,'Plus Jakarta Sans',system-ui,sans-serif)", fontWeight: 800, color: "#0D0D0D", fontSize: "1rem", marginBottom: "8px" }}>{p.name}</h3>
                   <p style={{ color: "#6B7280", fontSize: "0.8rem", lineHeight: 1.65, marginBottom: "14px" }}>{p.description}</p>
-                  <span style={{ color: "#800000", fontSize: "12px", fontWeight: 700 }}>Visit Website →</span>
+                  <span style={{ color: "#C41A1A", fontSize: "12px", fontWeight: 700 }}>Visit Website →</span>
                 </div>
               </a>
             ))}
@@ -446,7 +446,7 @@ export default function HomePage() {
                 News &amp; Projects
               </h2>
             </div>
-            <Link href="/blog" style={{ color: "#800000", fontWeight: 700, fontSize: "13px", textDecoration: "none" }}>View All Articles →</Link>
+            <Link href="/blog" style={{ color: "#C41A1A", fontWeight: 700, fontSize: "13px", textDecoration: "none" }}>View All Articles →</Link>
           </div>
 
           <div className="news-grid">
@@ -466,7 +466,7 @@ export default function HomePage() {
                   <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "0.85rem", lineHeight: 1.7, display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
                     {news[0].excerpt}
                   </p>
-                  <div style={{ marginTop: "18px", display: "inline-flex", alignItems: "center", gap: "6px", color: "#950000", fontSize: "12px", fontWeight: 700 }}>
+                  <div style={{ marginTop: "18px", display: "inline-flex", alignItems: "center", gap: "6px", color: "#E02020", fontSize: "12px", fontWeight: 700 }}>
                     Read Article
                     <svg width="12" height="12" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
                   </div>
@@ -496,9 +496,9 @@ export default function HomePage() {
               {/* Events card */}
               {events[0] && (
                 <div style={{ padding: "18px 20px", borderRadius: "14px", background: "#2C2C2C", border: "1px solid rgba(255,255,255,0.07)" }}>
-                  <div style={{ fontSize: "10px", fontWeight: 700, color: "#800000", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "10px" }}>Upcoming Event</div>
+                  <div style={{ fontSize: "10px", fontWeight: 700, color: "#C41A1A", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "10px" }}>Upcoming Event</div>
                   <div style={{ display: "flex", gap: "14px", alignItems: "flex-start" }}>
-                    <div style={{ width: "44px", height: "44px", background: "#800000", borderRadius: "10px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                    <div style={{ width: "44px", height: "44px", background: "#C41A1A", borderRadius: "10px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                         <rect x="2" y="3" width="16" height="15" rx="1.5"/><path d="M2 8h16M6 1v4M14 1v4"/>
                       </svg>
@@ -521,7 +521,7 @@ export default function HomePage() {
         <Image src="/images/gallery/10.jpg" alt="" fill sizes="100vw" style={{ objectFit: "cover" }} />
         <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.78)" }} />
         <div className="grid-texture" style={{ position: "absolute", inset: 0, opacity: 0.3, pointerEvents: "none" }} />
-        <div style={{ position: "absolute", top: "10%", right: "-5%", width: "500px", height: "500px", borderRadius: "50%", background: "radial-gradient(circle,rgba(92,0,0,0.45) 0%,transparent 70%)", pointerEvents: "none" }} />
+        <div style={{ position: "absolute", top: "10%", right: "-5%", width: "500px", height: "500px", borderRadius: "50%", background: "radial-gradient(circle,rgba(124,21,21,0.45) 0%,transparent 70%)", pointerEvents: "none" }} />
 
         <div className="wrap" style={{ position: "relative", textAlign: "center" }}>
           <div className="eyebrow" style={{ justifyContent: "center", marginBottom: "20px" }}>Get in Touch</div>

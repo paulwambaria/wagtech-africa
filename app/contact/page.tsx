@@ -76,15 +76,15 @@ export default function ContactPage() {
                   { icon: "M2 4l8 8 8-8M2 4h16v12H2z", label: "Email", value: company.email, href: `mailto:${company.email}` },
                 ].map((item) => (
                   <div key={item.label} className="card-light" style={{ padding: "20px", display: "flex", gap: "14px", alignItems: "flex-start" }}>
-                    <div style={{ width: "40px", height: "40px", borderRadius: "10px", background: "rgba(128,0,0,0.08)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#800000" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                    <div style={{ width: "40px", height: "40px", borderRadius: "10px", background: "rgba(196,26,26,0.08)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#C41A1A" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
                         <path d={item.icon} />
                       </svg>
                     </div>
                     <div>
                       <p style={{ fontWeight: 600, color: "#0D0D0D", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: "4px" }}>{item.label}</p>
                       {item.href ? (
-                        <a href={item.href} style={{ color: "#800000", fontSize: "13px", textDecoration: "none", lineHeight: 1.6 }}>{item.value}</a>
+                        <a href={item.href} style={{ color: "#C41A1A", fontSize: "13px", textDecoration: "none", lineHeight: 1.6 }}>{item.value}</a>
                       ) : (
                         <p style={{ color: "#6B7280", fontSize: "13px", lineHeight: 1.6 }}>{item.value}</p>
                       )}
@@ -210,7 +210,7 @@ export default function ContactPage() {
       {/* Map */}
       <div style={{ background: "#F8F8F8", height: "280px", display: "flex", alignItems: "center", justifyContent: "center", borderTop: "1px solid #E5E5E5" }}>
         <div style={{ textAlign: "center" }}>
-          <div style={{ width: "52px", height: "52px", borderRadius: "50%", background: "#800000", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 14px" }}>
+          <div style={{ width: "52px", height: "52px", borderRadius: "50%", background: "#C41A1A", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 14px" }}>
             <svg width="24" height="24" viewBox="0 0 20 20" fill="none" stroke="#fff" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
               <path d="M10 2a5 5 0 00-5 5c0 4 5 10 5 10s5-6 5-10a5 5 0 00-5-5z"/>
               <circle cx="10" cy="7" r="1.5" fill="#fff"/>
@@ -230,8 +230,8 @@ export default function ContactPage() {
         <div className="wrap">
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "12px" }}>
             {[
-              { label: "Sales Team", value: company.phones[0], href: `tel:${company.phones[0]}`, bg: "#800000", iconPath: "M4 3h3l1.5 4-2 1.5c1 2 2.5 3.5 4.5 4.5L12.5 11 16 12.5V16a1 1 0 01-1 1C6 17 3 8 3 4a1 1 0 011-1z" },
-              { label: "Email", value: company.email, href: `mailto:${company.email}`, bg: "#5C0000", iconPath: "M2 4l8 8 8-8M2 4h16v12H2z" },
+              { label: "Sales Team", value: company.phones[0], href: `tel:${company.phones[0]}`, bg: "#C41A1A", iconPath: "M4 3h3l1.5 4-2 1.5c1 2 2.5 3.5 4.5 4.5L12.5 11 16 12.5V16a1 1 0 01-1 1C6 17 3 8 3 4a1 1 0 011-1z" },
+              { label: "Email", value: company.email, href: `mailto:${company.email}`, bg: "#7B1515", iconPath: "M2 4l8 8 8-8M2 4h16v12H2z" },
               { label: "WhatsApp", value: "Start Chat", href: `https://wa.me/${company.whatsapp.replace(/\+/g, "")}`, bg: "#25D366", iconPath: "M12 3a9 9 0 100 18A9 9 0 0012 3z" },
               { label: "Get a Quote", value: "Fill the form above", href: "#", bg: "#6B7280", iconPath: "M12 2H5a1.5 1.5 0 00-1.5 1.5v13A1.5 1.5 0 005 18h10a1.5 1.5 0 001.5-1.5V6L12 2z" },
             ].map((opt) => (

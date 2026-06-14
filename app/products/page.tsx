@@ -84,10 +84,10 @@ export default function ProductsPage() {
                 {/* Gradient overlay */}
                 <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.3) 55%, rgba(0,0,0,0.1) 100%)" }} />
                 {/* Red top accent line */}
-                <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "3px", background: "linear-gradient(90deg, #800000, #950000)" }} />
+                <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "3px", background: "linear-gradient(90deg, #C41A1A, #E02020)" }} />
                 {/* Content */}
                 <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "20px 20px 18px" }}>
-                  <div style={{ fontSize: "10px", fontWeight: 700, letterSpacing: "0.14em", color: "#950000", textTransform: "uppercase", marginBottom: "6px" }}>Solutions</div>
+                  <div style={{ fontSize: "10px", fontWeight: 700, letterSpacing: "0.14em", color: "#E02020", textTransform: "uppercase", marginBottom: "6px" }}>Solutions</div>
                   <div style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 800, color: "#fff", fontSize: "1rem", lineHeight: 1.2, marginBottom: "6px" }}>{cat.label}</div>
                   <div style={{ color: "rgba(255,255,255,0.6)", fontSize: "12px", lineHeight: 1.5 }}>{cat.desc}</div>
                 </div>
@@ -113,7 +113,7 @@ export default function ProductsPage() {
                 <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.5) 55%, rgba(0,0,0,0.15) 100%)" }} />
                 <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "24px 32px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                   <div>
-                    <div style={{ fontSize: "10px", fontWeight: 700, letterSpacing: "0.14em", color: "#950000", textTransform: "uppercase", marginBottom: "6px" }}>
+                    <div style={{ fontSize: "10px", fontWeight: 700, letterSpacing: "0.14em", color: "#E02020", textTransform: "uppercase", marginBottom: "6px" }}>
                       {section.products.length} Products
                     </div>
                     <h2 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 900, color: "#fff", fontSize: "1.6rem", letterSpacing: "-0.02em", lineHeight: 1.15 }}>
@@ -134,7 +134,7 @@ export default function ProductsPage() {
                 return (
                   <div key={cat} style={{ marginBottom: "48px" }}>
                     <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "24px", paddingBottom: "12px", borderBottom: "1px solid #E5E5E5" }}>
-                      <div style={{ width: "4px", height: "20px", background: "#800000", borderRadius: "2px", flexShrink: 0 }} />
+                      <div style={{ width: "4px", height: "20px", background: "#C41A1A", borderRadius: "2px", flexShrink: 0 }} />
                       <h3 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 800, color: "#0D0D0D", fontSize: "1.05rem", letterSpacing: "-0.01em" }}>
                         {cat}
                       </h3>
@@ -145,7 +145,7 @@ export default function ProductsPage() {
                       {catProducts.map((product) => (
                         <div key={product.id} className="card-light" style={{ overflow: "hidden", display: "flex", flexDirection: "column" }}>
                           {/* Red accent top */}
-                          <div style={{ height: "3px", background: "linear-gradient(90deg, #800000, #950000)", flexShrink: 0 }} />
+                          <div style={{ height: "3px", background: "linear-gradient(90deg, #C41A1A, #E02020)", flexShrink: 0 }} />
 
                           {/* Product image zone */}
                           {product.image && (
@@ -177,8 +177,8 @@ export default function ProductsPage() {
                               <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "5px", marginBottom: "14px" }}>
                                 {product.features.slice(0, 2).map((f) => (
                                   <li key={f} style={{ display: "flex", alignItems: "flex-start", gap: "7px", fontSize: "11.5px", color: "#6B7280" }}>
-                                    <div style={{ width: "13px", height: "13px", borderRadius: "50%", background: "rgba(128,0,0,0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: "1px" }}>
-                                      <svg width="6" height="6" viewBox="0 0 20 20" fill="none" stroke="#800000" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 10l4.5 4.5L16 6"/></svg>
+                                    <div style={{ width: "13px", height: "13px", borderRadius: "50%", background: "rgba(196,26,26,0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: "1px" }}>
+                                      <svg width="6" height="6" viewBox="0 0 20 20" fill="none" stroke="#C41A1A" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 10l4.5 4.5L16 6"/></svg>
                                     </div>
                                     <span>{f}</span>
                                   </li>
@@ -189,7 +189,7 @@ export default function ProductsPage() {
                             {/* CTAs */}
                             <div style={{ display: "flex", gap: "8px", alignItems: "center", paddingTop: "12px", borderTop: "1px solid #F0F0F0", flexWrap: "wrap" }}>
                               <Link href={`/products/${product.slug}`}
-                                style={{ display: "inline-flex", alignItems: "center", gap: "5px", fontSize: "11px", fontWeight: 600, color: "#800000", textDecoration: "none", padding: "6px 10px", borderRadius: "7px", border: "1px solid rgba(128,0,0,0.25)", background: "rgba(128,0,0,0.05)" }}>
+                                style={{ display: "inline-flex", alignItems: "center", gap: "5px", fontSize: "11px", fontWeight: 600, color: "#C41A1A", textDecoration: "none", padding: "6px 10px", borderRadius: "7px", border: "1px solid rgba(196,26,26,0.25)", background: "rgba(196,26,26,0.05)" }}>
                                 Read More
                                 <svg width="10" height="10" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
                               </Link>

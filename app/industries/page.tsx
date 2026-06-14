@@ -105,8 +105,8 @@ export default function IndustriesPage() {
             <div key={ind.id} className="card-light" style={{ padding: "40px", background: i % 2 === 0 ? "#F8F8F8" : "#fff" }}>
               <div className="ind-detail-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "32px" }}>
                 <div>
-                  <div style={{ width: "52px", height: "52px", borderRadius: "14px", background: "rgba(128,0,0,0.08)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "16px" }}>
-                    <svg width="24" height="24" viewBox="0 0 20 20" fill="none" stroke="#800000" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                  <div style={{ width: "52px", height: "52px", borderRadius: "14px", background: "rgba(196,26,26,0.08)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "16px" }}>
+                    <svg width="24" height="24" viewBox="0 0 20 20" fill="none" stroke="#C41A1A" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
                       <path d={ind.iconPath} />
                       {ind.circle && <circle cx="10" cy="10" r="3.5" />}
                     </svg>
@@ -115,7 +115,7 @@ export default function IndustriesPage() {
                     {ind.title}
                   </h2>
                   <p style={{ color: "#6B7280", fontSize: "14px", lineHeight: 1.75, marginBottom: "16px" }}>{ind.desc}</p>
-                  <div style={{ background: "rgba(128,0,0,0.06)", borderRadius: "10px", padding: "16px", borderLeft: "3px solid #800000" }}>
+                  <div style={{ background: "rgba(196,26,26,0.06)", borderRadius: "10px", padding: "16px", borderLeft: "3px solid #C41A1A" }}>
                     <p style={{ fontSize: "11px", fontWeight: 700, color: "#0D0D0D", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: "6px" }}>Key Challenge</p>
                     <p style={{ color: "#6B7280", fontSize: "13px", lineHeight: 1.7, fontStyle: "italic" }}>&ldquo;{ind.challenge}&rdquo;</p>
                   </div>
@@ -126,8 +126,8 @@ export default function IndustriesPage() {
                   <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "10px" }}>
                     {ind.solutions.map((s) => (
                       <li key={s} style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "14px", color: "#6B7280" }}>
-                        <div style={{ width: "18px", height: "18px", borderRadius: "50%", background: "rgba(128,0,0,0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                          <svg width="9" height="9" viewBox="0 0 20 20" fill="none" stroke="#800000" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 10l4.5 4.5L16 6"/></svg>
+                        <div style={{ width: "18px", height: "18px", borderRadius: "50%", background: "rgba(196,26,26,0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                          <svg width="9" height="9" viewBox="0 0 20 20" fill="none" stroke="#C41A1A" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 10l4.5 4.5L16 6"/></svg>
                         </div>
                         {s}
                       </li>

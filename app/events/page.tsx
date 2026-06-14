@@ -55,7 +55,7 @@ export default function EventsPage() {
               {events.map((ev) => (
                 <div key={ev.id} className="card-light" style={{ padding: "32px" }}>
                   <div style={{ display: "flex", gap: "18px", alignItems: "flex-start" }}>
-                    <div style={{ width: "56px", height: "56px", background: "#800000", borderRadius: "14px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                    <div style={{ width: "56px", height: "56px", background: "#C41A1A", borderRadius: "14px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                       <svg width="24" height="24" viewBox="0 0 20 20" fill="none" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                         <rect x="2" y="3" width="16" height="15" rx="1.5"/><path d="M2 8h16M6 1v4M14 1v4"/>
                       </svg>
@@ -65,7 +65,7 @@ export default function EventsPage() {
                       <h3 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 700, color: "#0D0D0D", fontSize: "1rem", lineHeight: 1.35, marginBottom: "6px" }}>
                         {ev.title}
                       </h3>
-                      <p style={{ color: "#800000", fontSize: "12px", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "4px" }}>{ev.date}</p>
+                      <p style={{ color: "#C41A1A", fontSize: "12px", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "4px" }}>{ev.date}</p>
                       <p style={{ color: "#6B7280", fontSize: "13px", marginBottom: "12px" }}>{ev.location}</p>
                       <p style={{ color: "#6B7280", fontSize: "13.5px", lineHeight: 1.7, marginBottom: "16px" }}>{ev.description}</p>
                       <a href={ev.registrationUrl} className="btn-red" style={{ fontSize: "13px", padding: "10px 20px" }}>
