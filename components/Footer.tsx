@@ -102,6 +102,7 @@ export default function Footer() {
                 { label: "Our Partners", href: "/about#partners" },
                 { label: "Training & Support", href: "/training-support" },
                 { label: "Blog & News", href: "/blog" },
+                { label: "Gallery", href: "/gallery" },
                 { label: "Events", href: "/events" },
                 { label: "Contact Us", href: "/contact" },
               ].map((l) => (
