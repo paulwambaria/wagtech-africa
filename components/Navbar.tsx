@@ -74,8 +74,8 @@ export default function Navbar() {
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: "70px" }}>
           {/* Logo */}
           <Link href="/" style={{ display: "flex", alignItems: "center", gap: "12px", textDecoration: "none" }}>
-            <div style={{ width: "52px", height: "52px", borderRadius: "10px", overflow: "hidden", flexShrink: 0, background: "#000" }}>
-              <Image src="/logo.jpg" alt="Wagtech Africa" width={52} height={52} style={{ objectFit: "contain", width: "100%", height: "100%" }} />
+            <div style={{ width: "68px", height: "68px", borderRadius: "50%", overflow: "hidden", flexShrink: 0, background: "#fff" }}>
+              <Image src="/logo.png" alt="Wagtech Africa" width={68} height={68} style={{ objectFit: "contain", width: "100%", height: "100%" }} />
             </div>
             <div>
               <div style={{ color: "#fff", fontWeight: 800, fontSize: "0.95rem", lineHeight: 1.1, fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", letterSpacing: "-0.01em" }}>

@@ -31,8 +31,8 @@ export default function Footer() {
           {/* Brand */}
           <div style={{ gridColumn: "span 2" }}>
             <Link href="/" style={{ display: "inline-flex", alignItems: "center", gap: "12px", textDecoration: "none", marginBottom: "20px" }}>
-              <div style={{ width: "48px", height: "48px", borderRadius: "50%", overflow: "hidden", border: "2px solid rgba(128,0,0,0.4)", flexShrink: 0 }}>
-                <Image src="/logo.jpg" alt="Wagtech Africa" width={48} height={48} style={{ objectFit: "cover", width: "100%", height: "100%" }} />
+              <div style={{ width: "80px", height: "80px", borderRadius: "50%", overflow: "hidden", border: "3px solid rgba(255,255,255,0.15)", flexShrink: 0, background: "#fff" }}>
+                <Image src="/logo.png" alt="Wagtech Africa" width={80} height={80} style={{ objectFit: "contain", width: "100%", height: "100%" }} />
               </div>
               <div>
                 <div style={{ color: "#fff", fontWeight: 800, fontSize: "1rem", fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", lineHeight: 1.1 }}>
