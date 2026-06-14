@@ -40,10 +40,10 @@ body {
   --red-bright:  #950000;
   --gray-steel:  #6B7280;
   --black:       #0D0D0D;
-  --dark:        #111111;
-  --dark-2:      #181818;
-  --dark-3:      #222222;
-  --dark-4:      #2A2A2A;
+  --dark:        #2C2C2C;
+  --dark-2:      #363636;
+  --dark-3:      #3C3C3C;
+  --dark-4:      #464646;
   --white:       #FFFFFF;
   --off-white:   #F8F8F8;
   --gray-100:    #F3F3F3;
@@ -64,7 +64,7 @@ body {
 
 /* ── Hero dark background ── */
 .hero-dark {
-  background: #0D0D0D;
+  background: #2C2C2C;
   position: relative;
 }
 .hero-dark::before {
@@ -99,13 +99,13 @@ body {
 }
 
 .card-dark {
-  background: #181818;
+  background: #363636;
   border: 1px solid rgba(255,255,255,0.07);
   border-radius: 14px;
   transition: background 0.2s ease, border-color 0.2s ease;
 }
 .card-dark:hover {
-  background: #1F1F1F;
+  background: #3F3F3F;
   border-color: rgba(128,0,0,0.3);
 }
 
@@ -220,7 +220,7 @@ body {
 
 /* ── Page hero (inner pages) ── */
 .page-hero {
-  background: #111111;
+  background: #2C2C2C;
   padding: 140px 0 72px;
   position: relative;
   overflow: hidden;
@@ -301,7 +301,7 @@ body {
 
 /* ── Scrollbar ── */
 ::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: #111; }
+::-webkit-scrollbar-track { background: #2C2C2C; }
 ::-webkit-scrollbar-thumb { background: #800000; border-radius: 2px; }
 
 /* ── Animations ── */

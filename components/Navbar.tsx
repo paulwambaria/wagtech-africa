@@ -42,7 +42,7 @@ export default function Navbar() {
       style={{
         position: "fixed", top: 0, left: 0, right: 0, zIndex: 50,
         transition: "background 0.3s ease, box-shadow 0.3s ease",
-        background: scrolled ? "rgba(13,13,13,0.97)" : "transparent",
+        background: scrolled ? "rgba(44,44,44,0.97)" : "transparent",
         backdropFilter: scrolled ? "blur(20px)" : "none",
         boxShadow: scrolled ? "0 1px 0 rgba(255,255,255,0.06)" : "none",
       }}
@@ -103,7 +103,7 @@ export default function Navbar() {
                   </button>
                   <div style={{
                     position: "absolute", top: "calc(100% + 6px)", left: "-8px", width: "236px",
-                    background: "#181818", border: "1px solid rgba(255,255,255,0.09)", borderRadius: "14px",
+                    background: "#363636", border: "1px solid rgba(255,255,255,0.09)", borderRadius: "14px",
                     padding: "8px", boxShadow: "0 20px 60px rgba(0,0,0,0.5)",
                     opacity: openDrop === item.label ? 1 : 0,
                     transform: openDrop === item.label ? "translateY(0)" : "translateY(-6px)",
@@ -154,7 +154,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div style={{ background: "#111111", borderTop: "1px solid rgba(255,255,255,0.07)", maxHeight: "80vh", overflowY: "auto" }}>
+        <div style={{ background: "#2C2C2C", borderTop: "1px solid rgba(255,255,255,0.07)", maxHeight: "80vh", overflowY: "auto" }}>
           <div className="wrap" style={{ padding: "16px 0 24px" }}>
             {nav.map((item) => (
               <div key={item.label}>

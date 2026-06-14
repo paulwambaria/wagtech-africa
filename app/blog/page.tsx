@@ -81,7 +81,7 @@ export default function BlogPage() {
           </div>
 
           {/* Newsletter */}
-          <div style={{ background: "#111111", borderRadius: "20px", padding: "56px", textAlign: "center" }}>
+          <div style={{ background: "#2C2C2C", borderRadius: "20px", padding: "56px", textAlign: "center" }}>
             <h3 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 900, color: "#fff", fontSize: "1.8rem", letterSpacing: "-0.02em", marginBottom: "12px" }}>
               Stay Updated
             </h3>

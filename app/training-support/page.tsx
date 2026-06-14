@@ -84,7 +84,7 @@ export default function TrainingSupportPage() {
       </section>
 
       {/* Expertise */}
-      <section className="section" style={{ background: "#111111" }}>
+      <section className="section" style={{ background: "#2C2C2C" }}>
         <div className="wrap">
           <div style={{ textAlign: "center", marginBottom: "52px" }}>
             <div className="eyebrow" style={{ justifyContent: "center" }}>In-House Expertise</div>

@@ -220,7 +220,7 @@ export default function ProductsPage() {
       `}</style>
 
       {/* ── Bottom CTA ── */}
-      <section style={{ background: "#111111", padding: "72px 0" }}>
+      <section style={{ background: "#2C2C2C", padding: "72px 0" }}>
         <div className="wrap" style={{ textAlign: "center" }}>
           <div className="eyebrow" style={{ justifyContent: "center" }}>Need Assistance?</div>
           <h2 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 900, color: "#fff", fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)", letterSpacing: "-0.03em", marginBottom: "14px" }}>

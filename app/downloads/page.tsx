@@ -51,7 +51,7 @@ export default function DownloadsPage() {
       <section className="section" style={{ background: "#F8F8F8" }}>
         <div className="wrap">
           {/* Filters */}
-          <div style={{ background: "#111111", borderRadius: "16px", padding: "28px", marginBottom: "40px" }}>
+          <div style={{ background: "#2C2C2C", borderRadius: "16px", padding: "28px", marginBottom: "40px" }}>
             <div className="dl-filter-grid" style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr", gap: "16px", marginBottom: "16px" }}>
               <div>
                 <label style={{ display: "block", fontSize: "10px", fontWeight: 700, color: "rgba(255,255,255,0.5)", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "8px" }}>Search</label>

@@ -78,7 +78,7 @@ export default function AgronomyPage() {
                               {r.label}
                             </a>
                           ))}
-                          <Link href="/contact" style={{ marginLeft: "auto", fontSize: "11px", fontWeight: 600, padding: "6px 12px", borderRadius: "8px", textDecoration: "none", background: "#0D0D0D", color: "#fff" }}>
+                          <Link href="/contact" style={{ marginLeft: "auto", fontSize: "11px", fontWeight: 600, padding: "6px 12px", borderRadius: "8px", textDecoration: "none", background: "#2C2C2C", color: "#fff" }}>
                             Request Quote
                           </Link>
                         </div>

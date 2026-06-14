@@ -24,7 +24,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer style={{ background: "#0D0D0D", borderTop: "1px solid rgba(255,255,255,0.07)" }}>
+    <footer style={{ background: "#2C2C2C", borderTop: "1px solid rgba(255,255,255,0.07)" }}>
       {/* Main footer */}
       <div className="wrap" style={{ paddingTop: "72px", paddingBottom: "64px" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "48px 32px" }}>

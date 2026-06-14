@@ -63,7 +63,7 @@ export default function Trace2OPage() {
             ))}
           </div>
 
-          <div style={{ background: "#111111", borderRadius: "20px", padding: "52px", textAlign: "center" }}>
+          <div style={{ background: "#2C2C2C", borderRadius: "20px", padding: "52px", textAlign: "center" }}>
             <h3 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 900, color: "#fff", fontSize: "1.6rem", letterSpacing: "-0.02em", marginBottom: "12px" }}>
               Learn More About Trace2O
             </h3>

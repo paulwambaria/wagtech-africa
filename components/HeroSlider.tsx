@@ -62,7 +62,7 @@ export default function HeroSlider() {
   }, [current, goTo]);
 
   return (
-    <section style={{ position: "relative", minHeight: "680px", overflow: "hidden", background: "#0D0D0D" }}>
+    <section style={{ position: "relative", minHeight: "680px", overflow: "hidden", background: "#2C2C2C" }}>
 
       {/* ── Slide Images ── */}
       {slides.map((slide, i) => (

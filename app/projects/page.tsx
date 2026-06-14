@@ -309,7 +309,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* ── Pan-African reach with africa map bg ── */}
-      <section style={{ background: "#0D0D0D", padding: "72px 0", position: "relative", overflow: "hidden" }}>
+      <section style={{ background: "#2C2C2C", padding: "72px 0", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", opacity: 0.06, pointerEvents: "none" }}>
           <Image src="/images/gallery/africa-map.png" alt="" width={700} height={700} style={{ objectFit: "contain" }} />
         </div>

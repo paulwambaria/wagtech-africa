@@ -35,7 +35,7 @@ export default function WaterQualityPage() {
       </PageBanner>
 
       {/* Category nav */}
-      <div style={{ background: "#0D0D0D", borderBottom: "1px solid rgba(255,255,255,0.07)" }}>
+      <div style={{ background: "#2C2C2C", borderBottom: "1px solid rgba(255,255,255,0.07)" }}>
         <div className="wrap" style={{ paddingTop: "14px", paddingBottom: "14px", overflowX: "auto" }}>
           <div style={{ display: "flex", gap: "8px", whiteSpace: "nowrap" }}>
             {categories.map((cat) => (
@@ -103,7 +103,7 @@ export default function WaterQualityPage() {
                             </a>
                           ))}
                           <Link href="/contact"
-                            style={{ marginLeft: "auto", fontSize: "11px", fontWeight: 600, padding: "6px 12px", borderRadius: "8px", textDecoration: "none", background: "#0D0D0D", color: "#fff" }}>
+                            style={{ marginLeft: "auto", fontSize: "11px", fontWeight: 600, padding: "6px 12px", borderRadius: "8px", textDecoration: "none", background: "#2C2C2C", color: "#fff" }}>
                             Request Quote
                           </Link>
                         </div>

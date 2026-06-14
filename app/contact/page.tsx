@@ -226,7 +226,7 @@ export default function ContactPage() {
         </div>
       </div>
 
-      <section style={{ background: "#111111", padding: "48px 0" }}>
+      <section style={{ background: "#2C2C2C", padding: "48px 0" }}>
         <div className="wrap">
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "12px" }}>
             {[

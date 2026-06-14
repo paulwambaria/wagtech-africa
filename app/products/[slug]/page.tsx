@@ -87,7 +87,7 @@ export default async function ProductDetailPage(
 
               {/* CTA action panel */}
               <div style={{ border: "1px solid #E5E5E5", borderRadius: "16px", overflow: "hidden" }}>
-                <div style={{ background: "#0D0D0D", padding: "18px 22px" }}>
+                <div style={{ background: "#2C2C2C", padding: "18px 22px" }}>
                   <div style={{ color: "#fff", fontFamily: "var(--font-jakarta,'Plus Jakarta Sans',system-ui,sans-serif)", fontWeight: 700, fontSize: "0.95rem" }}>
                     Enquire About This Product
                   </div>
@@ -207,7 +207,7 @@ export default async function ProductDetailPage(
               )}
 
               {/* Solution link */}
-              <div style={{ padding: "20px 24px", background: "#0D0D0D", borderRadius: "14px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "16px", flexWrap: "wrap" }}>
+              <div style={{ padding: "20px 24px", background: "#2C2C2C", borderRadius: "14px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "16px", flexWrap: "wrap" }}>
                 <div>
                   <div style={{ color: "rgba(255,255,255,0.45)", fontSize: "11px", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "4px" }}>Part of our</div>
                   <div style={{ color: "#fff", fontFamily: "var(--font-jakarta,'Plus Jakarta Sans',system-ui,sans-serif)", fontWeight: 800, fontSize: "1rem" }}>{product._solutionLabel} Solutions</div>

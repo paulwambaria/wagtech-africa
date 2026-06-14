@@ -10,7 +10,7 @@ export default function PageBanner({ image, children }: PageBannerProps) {
     <section style={{
       position: "relative",
       overflow: "hidden",
-      background: "#0D0D0D",
+      background: "#2C2C2C",
       minHeight: "360px",
       paddingTop: "130px",
       paddingBottom: "52px",

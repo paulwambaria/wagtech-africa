@@ -243,7 +243,7 @@ export default function HomePage() {
       </section>
 
       {/* ── 5. GALLERY STRIP ── */}
-      <div style={{ background: "#0D0D0D", padding: "10px 0" }}>
+      <div style={{ background: "#2C2C2C", padding: "10px 0" }}>
         <div style={{ display: "flex", gap: "6px", height: "200px", overflow: "hidden" }}>
           {["/images/gallery/10.jpg","/images/gallery/18.jpg","/images/gallery/21.jpg","/images/gallery/04.jpg","/images/gallery/07.jpg"].map((src, i) => (
             <div key={i} style={{ flex: 1, position: "relative", overflow: "hidden" }} className="strip-photo">
@@ -313,7 +313,7 @@ export default function HomePage() {
       </section>
 
       {/* ── 7. INDUSTRIES, dark with background photo ── */}
-      <section style={{ background: "#0D0D0D", padding: "88px 0", position: "relative", overflow: "hidden" }}>
+      <section style={{ background: "#2C2C2C", padding: "88px 0", position: "relative", overflow: "hidden" }}>
         {/* Faint background photo */}
         <div style={{ position: "absolute", inset: 0, pointerEvents: "none" }}>
           <Image src="/images/gallery/07.jpg" alt="" fill sizes="100vw" style={{ objectFit: "cover", opacity: 0.08 }} />
@@ -495,7 +495,7 @@ export default function HomePage() {
 
               {/* Events card */}
               {events[0] && (
-                <div style={{ padding: "18px 20px", borderRadius: "14px", background: "#0D0D0D", border: "1px solid rgba(255,255,255,0.07)" }}>
+                <div style={{ padding: "18px 20px", borderRadius: "14px", background: "#2C2C2C", border: "1px solid rgba(255,255,255,0.07)" }}>
                   <div style={{ fontSize: "10px", fontWeight: 700, color: "#800000", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "10px" }}>Upcoming Event</div>
                   <div style={{ display: "flex", gap: "14px", alignItems: "flex-start" }}>
                     <div style={{ width: "44px", height: "44px", background: "#800000", borderRadius: "10px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>

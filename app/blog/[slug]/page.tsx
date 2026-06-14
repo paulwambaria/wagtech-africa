@@ -87,7 +87,7 @@ export default async function ArticlePage({ params }: Props) {
             <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px" }}>
               {news.filter((n) => n.slug !== slug).slice(0, 3).map((n) => (
                 <Link key={n.id} href={`/blog/${n.slug}`} style={{ textDecoration: "none" }}>
-                  <div style={{ height: "120px", background: "#111111", borderRadius: "12px", marginBottom: "12px", display: "flex", alignItems: "center", justifyContent: "center", position: "relative", overflow: "hidden" }}>
+                  <div style={{ height: "120px", background: "#2C2C2C", borderRadius: "12px", marginBottom: "12px", display: "flex", alignItems: "center", justifyContent: "center", position: "relative", overflow: "hidden" }}>
                     <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "2px", background: "#800000" }} />
                     <svg width="28" height="28" viewBox="0 0 20 20" fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="0.8" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M12 2H5a1.5 1.5 0 00-1.5 1.5v13A1.5 1.5 0 005 18h10a1.5 1.5 0 001.5-1.5V6L12 2z"/>
