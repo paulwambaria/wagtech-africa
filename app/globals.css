@@ -4,7 +4,7 @@
    WAGTECH AFRICA — BRAND DESIGN SYSTEM
    Colors extracted from official logo:
    • Deep Crimson  #8B1515
-   • Brand Red     #C41A1A
+   • Brand Red     #800000
    • Steel Gray    #6B7280
    • Near Black    #0D0D0D
 ══════════════════════════════════════════ */
@@ -35,9 +35,9 @@ body {
 
 /* ── Brand Colors ── */
 :root {
-  --red-dark:    #7B1515;
-  --red:         #C41A1A;
-  --red-bright:  #E02020;
+  --red-dark:    #5C0000;
+  --red:         #800000;
+  --red-bright:  #950000;
   --gray-steel:  #6B7280;
   --black:       #0D0D0D;
   --dark:        #111111;
@@ -56,7 +56,7 @@ body {
 
 /* ── Gradient text ── */
 .text-gradient {
-  background: linear-gradient(135deg, #E02020 0%, #FF6B6B 100%);
+  background: linear-gradient(135deg, #800000 0%, #B22222 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -72,8 +72,8 @@ body {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 70% 60% at 10% 50%, rgba(124,21,21,0.35) 0%, transparent 65%),
-    radial-gradient(ellipse 50% 40% at 90% 80%, rgba(124,21,21,0.15) 0%, transparent 60%);
+    radial-gradient(ellipse 70% 60% at 10% 50%, rgba(92,0,0,0.35) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 40% at 90% 80%, rgba(92,0,0,0.15) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -95,7 +95,7 @@ body {
 .card-light:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 32px rgba(0,0,0,0.08);
-  border-color: rgba(196,26,26,0.25);
+  border-color: rgba(128,0,0,0.25);
 }
 
 .card-dark {
@@ -106,7 +106,7 @@ body {
 }
 .card-dark:hover {
   background: #1F1F1F;
-  border-color: rgba(196,26,26,0.3);
+  border-color: rgba(128,0,0,0.3);
 }
 
 /* ── Buttons ── */
@@ -114,7 +114,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #C41A1A;
+  background: #800000;
   color: #fff;
   font-weight: 600;
   font-size: 0.875rem;
@@ -127,8 +127,8 @@ body {
   white-space: nowrap;
 }
 .btn-red:hover {
-  background: #A51515;
-  box-shadow: 0 6px 20px rgba(196,26,26,0.4);
+  background: #6B0000;
+  box-shadow: 0 6px 20px rgba(128,0,0,0.4);
   transform: translateY(-1px);
 }
 
@@ -159,20 +159,20 @@ body {
   align-items: center;
   gap: 8px;
   background: transparent;
-  color: #E02020;
+  color: #950000;
   font-weight: 600;
   font-size: 0.875rem;
   padding: 12px 26px;
   border-radius: 10px;
-  border: 1px solid rgba(224,32,32,0.4);
+  border: 1px solid rgba(149,0,0,0.4);
   cursor: pointer;
   text-decoration: none;
   transition: background 0.2s, border-color 0.2s;
   white-space: nowrap;
 }
 .btn-ghost-red:hover {
-  background: rgba(224,32,32,0.08);
-  border-color: #E02020;
+  background: rgba(149,0,0,0.08);
+  border-color: #950000;
 }
 
 .btn-outline-dark {
@@ -192,8 +192,8 @@ body {
   white-space: nowrap;
 }
 .btn-outline-dark:hover {
-  background: #C41A1A;
-  border-color: #C41A1A;
+  background: #800000;
+  border-color: #800000;
   color: #fff;
 }
 
@@ -206,7 +206,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #C41A1A;
+  color: #800000;
   margin-bottom: 14px;
 }
 .eyebrow::before {
@@ -214,7 +214,7 @@ body {
   display: block;
   width: 20px;
   height: 2px;
-  background: #C41A1A;
+  background: #800000;
   border-radius: 2px;
 }
 
@@ -229,7 +229,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 60% 80% at 0% 50%, rgba(124,21,21,0.3) 0%, transparent 60%);
+  background: radial-gradient(ellipse 60% 80% at 0% 50%, rgba(92,0,0,0.3) 0%, transparent 60%);
   pointer-events: none;
 }
 .page-hero::after {
@@ -261,9 +261,9 @@ body {
   justify-content: center;
   flex-shrink: 0;
 }
-.icon-box-red { background: rgba(196,26,26,0.1); color: #C41A1A; }
+.icon-box-red { background: rgba(128,0,0,0.1); color: #800000; }
 .icon-box-white { background: rgba(255,255,255,0.08); color: #fff; }
-.icon-box-dark { background: #1A1A1A; color: #C41A1A; }
+.icon-box-dark { background: #1A1A1A; color: #800000; }
 
 /* ── Tag / badge ── */
 .tag {
@@ -276,7 +276,7 @@ body {
   padding: 4px 10px;
   border-radius: 999px;
 }
-.tag-red { background: rgba(196,26,26,0.1); color: #C41A1A; border: 1px solid rgba(196,26,26,0.2); }
+.tag-red { background: rgba(128,0,0,0.1); color: #800000; border: 1px solid rgba(128,0,0,0.2); }
 .tag-gray { background: #F3F3F3; color: #6B7280; border: 1px solid #E5E5E5; }
 .tag-dark { background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.6); }
 
@@ -287,14 +287,14 @@ body {
   font-weight: 900;
   letter-spacing: -0.03em;
   line-height: 1;
-  color: #C41A1A;
+  color: #800000;
 }
 
 /* ── Red border accent ── */
 .red-line {
   width: 40px;
   height: 3px;
-  background: #C41A1A;
+  background: #800000;
   border-radius: 2px;
   margin-bottom: 16px;
 }
@@ -302,7 +302,7 @@ body {
 /* ── Scrollbar ── */
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: #111; }
-::-webkit-scrollbar-thumb { background: #C41A1A; border-radius: 2px; }
+::-webkit-scrollbar-thumb { background: #800000; border-radius: 2px; }
 
 /* ── Animations ── */
 @keyframes fadeUp {

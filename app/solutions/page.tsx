@@ -40,8 +40,8 @@ export default function SolutionsPage() {
           <div className="sol-cards-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px" }}>
             {solutions.map((sol) => (
               <Link key={sol.id} href={`/solutions/${sol.slug}`} className="card-light" style={{ padding: "32px", display: "block", textDecoration: "none" }}>
-                <div style={{ width: "52px", height: "52px", borderRadius: "14px", background: "rgba(196,26,26,0.08)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "18px" }}>
-                  <svg width="24" height="24" viewBox="0 0 20 20" fill="none" stroke="#C41A1A" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                <div style={{ width: "52px", height: "52px", borderRadius: "14px", background: "rgba(128,0,0,0.08)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "18px" }}>
+                  <svg width="24" height="24" viewBox="0 0 20 20" fill="none" stroke="#800000" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
                     <path d={solutionIconPaths[sol.slug] ?? "M10 10m-6 0a6 6 0 1012 0 6 6 0 01-12 0"} />
                     {sol.slug === "hydromet" && <circle cx="10" cy="10" r="3.5" />}
                     {sol.slug === "environmental" && <circle cx="10" cy="10" r="7.5" />}
@@ -53,7 +53,7 @@ export default function SolutionsPage() {
                 <p style={{ color: "#6B7280", fontSize: "13.5px", lineHeight: 1.7, marginBottom: "20px" }}>{sol.description}</p>
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                   <span style={{ fontSize: "11px", color: "#9CA3AF" }}>{sol.productCount}+ Products</span>
-                  <span style={{ color: "#C41A1A", fontSize: "12px", fontWeight: 700, display: "flex", alignItems: "center", gap: "4px" }}>
+                  <span style={{ color: "#800000", fontSize: "12px", fontWeight: 700, display: "flex", alignItems: "center", gap: "4px" }}>
                     Explore →
                   </span>
                 </div>
@@ -73,7 +73,7 @@ export default function SolutionsPage() {
         ))}
       </div>
 
-      <section style={{ background: "#C41A1A", padding: "80px 0" }}>
+      <section style={{ background: "#800000", padding: "80px 0" }}>
         <div className="wrap" style={{ textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", fontWeight: 900, color: "#fff", fontSize: "clamp(2rem, 4vw, 2.8rem)", letterSpacing: "-0.03em", marginBottom: "16px" }}>
             Not Sure Which Solution You Need?
@@ -81,7 +81,7 @@ export default function SolutionsPage() {
           <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "1.1rem", lineHeight: 1.7, marginBottom: "36px" }}>
             Our technical team will assess your requirements and recommend the ideal solution.
           </p>
-          <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#fff", color: "#C41A1A", fontWeight: 700, padding: "14px 32px", borderRadius: "10px", textDecoration: "none", fontSize: "15px" }}>
+          <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#fff", color: "#800000", fontWeight: 700, padding: "14px 32px", borderRadius: "10px", textDecoration: "none", fontSize: "15px" }}>
             Talk to an Expert
           </Link>
         </div>

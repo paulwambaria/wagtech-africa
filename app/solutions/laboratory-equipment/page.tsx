@@ -12,12 +12,12 @@ export default function LaboratoryEquipmentPage() {
     <>
       <PageBanner image="/images/gallery/07.jpg">
         <div className="wrap" style={{ position: "relative", zIndex: 1 }}>
-          <Link href="/solutions" style={{ color: "#C41A1A", fontSize: "13px", fontWeight: 600, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "6px", marginBottom: "20px" }}>
+          <Link href="/solutions" style={{ color: "#800000", fontSize: "13px", fontWeight: 600, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "6px", marginBottom: "20px" }}>
             <svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 10H4M9 5l-5 5 5 5"/></svg>
             Solutions
           </Link>
-          <div style={{ width: "52px", height: "52px", borderRadius: "14px", background: "rgba(196,26,26,0.15)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "16px" }}>
-            <svg width="26" height="26" viewBox="0 0 20 20" fill="none" stroke="#C41A1A" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+          <div style={{ width: "52px", height: "52px", borderRadius: "14px", background: "rgba(128,0,0,0.15)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "16px" }}>
+            <svg width="26" height="26" viewBox="0 0 20 20" fill="none" stroke="#800000" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
               <path d="M8 3h4M7 3v6L3 16h14l-4-7V3"/>
             </svg>
           </div>
@@ -42,8 +42,8 @@ export default function LaboratoryEquipmentPage() {
               { title: "Data Management", desc: "Laboratory information management systems, data loggers, and cloud-based data management platforms.", tags: ["LIMS", "Data Logging", "Cloud Platform"] },
             ].map((item) => (
               <div key={item.title} className="card-light" style={{ padding: "28px" }}>
-                <div style={{ width: "44px", height: "44px", borderRadius: "12px", background: "rgba(196,26,26,0.08)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "16px" }}>
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#C41A1A" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                <div style={{ width: "44px", height: "44px", borderRadius: "12px", background: "rgba(128,0,0,0.08)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "16px" }}>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#800000" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M8 3h4M7 3v6L3 16h14l-4-7V3"/>
                   </svg>
                 </div>

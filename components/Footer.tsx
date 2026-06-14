@@ -31,14 +31,14 @@ export default function Footer() {
           {/* Brand */}
           <div style={{ gridColumn: "span 2" }}>
             <Link href="/" style={{ display: "inline-flex", alignItems: "center", gap: "12px", textDecoration: "none", marginBottom: "20px" }}>
-              <div style={{ width: "48px", height: "48px", borderRadius: "50%", overflow: "hidden", border: "2px solid rgba(196,26,26,0.4)", flexShrink: 0 }}>
+              <div style={{ width: "48px", height: "48px", borderRadius: "50%", overflow: "hidden", border: "2px solid rgba(128,0,0,0.4)", flexShrink: 0 }}>
                 <Image src="/logo.jpg" alt="Wagtech Africa" width={48} height={48} style={{ objectFit: "cover", width: "100%", height: "100%" }} />
               </div>
               <div>
                 <div style={{ color: "#fff", fontWeight: 800, fontSize: "1rem", fontFamily: "var(--font-jakarta, 'Plus Jakarta Sans', system-ui, sans-serif)", lineHeight: 1.1 }}>
                   Wagtech Africa
                 </div>
-                <div style={{ color: "#C41A1A", fontSize: "9px", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", marginTop: "3px" }}>
+                <div style={{ color: "#800000", fontSize: "9px", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", marginTop: "3px" }}>
                   Trace2O · Since 1990
                 </div>
               </div>
@@ -57,7 +57,7 @@ export default function Footer() {
               {socials.map((s) => (
                 <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label}
                   style={{ width: "34px", height: "34px", background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center", transition: "background 0.2s, border-color 0.2s" }}
-                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "#C41A1A"; (e.currentTarget as HTMLElement).style.borderColor = "#C41A1A"; }}
+                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "#800000"; (e.currentTarget as HTMLElement).style.borderColor = "#800000"; }}
                   onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.06)"; (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.08)"; }}
                 >
                   <svg style={{ width: "14px", height: "14px", fill: "rgba(255,255,255,0.7)" }} viewBox="0 0 24 24">
@@ -83,7 +83,7 @@ export default function Footer() {
               ].map((l) => (
                 <li key={l.href}>
                   <Link href={l.href} style={{ color: "rgba(255,255,255,0.45)", fontSize: "13px", textDecoration: "none", transition: "color 0.15s" }}
-                    onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#C41A1A")}
+                    onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#800000")}
                     onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.45)")}
                   >{l.label}</Link>
                 </li>
@@ -107,7 +107,7 @@ export default function Footer() {
               ].map((l) => (
                 <li key={l.href}>
                   <Link href={l.href} style={{ color: "rgba(255,255,255,0.45)", fontSize: "13px", textDecoration: "none", transition: "color 0.15s" }}
-                    onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#C41A1A")}
+                    onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#800000")}
                     onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.45)")}
                   >{l.label}</Link>
                 </li>
@@ -128,7 +128,7 @@ export default function Footer() {
               ].map((l) => (
                 <li key={l.href}>
                   <Link href={l.href} style={{ color: "rgba(255,255,255,0.45)", fontSize: "13px", textDecoration: "none", transition: "color 0.15s" }}
-                    onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#C41A1A")}
+                    onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#800000")}
                     onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.45)")}
                   >{l.label}</Link>
                 </li>

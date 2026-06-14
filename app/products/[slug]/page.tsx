@@ -129,7 +129,7 @@ export default async function ProductDetailPage(
 
               {/* Phone alternative */}
               <div style={{ marginTop: "16px", padding: "14px 18px", background: "#F8F8F8", borderRadius: "12px", display: "flex", alignItems: "center", gap: "10px" }}>
-                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#C41A1A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#800000" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M2 3h4l2 4.5-2.5 1.5a11 11 0 005 5l1.5-2.5L16 13v4a1 1 0 01-1 1C5 18 2 9 2 4a1 1 0 011-1z"/>
                 </svg>
                 <div>
@@ -144,7 +144,7 @@ export default async function ProductDetailPage(
               {/* Description */}
               <div style={{ marginBottom: "36px" }}>
                 <h2 style={{ fontFamily: "var(--font-jakarta,'Plus Jakarta Sans',system-ui,sans-serif)", fontWeight: 900, color: "#0D0D0D", fontSize: "1.25rem", letterSpacing: "-0.02em", marginBottom: "14px", display: "flex", alignItems: "center", gap: "10px" }}>
-                  <span style={{ width: "4px", height: "20px", background: "#C41A1A", borderRadius: "2px", display: "inline-block", flexShrink: 0 }} />
+                  <span style={{ width: "4px", height: "20px", background: "#800000", borderRadius: "2px", display: "inline-block", flexShrink: 0 }} />
                   Overview
                 </h2>
                 <p style={{ color: "#4B5563", lineHeight: 1.85, fontSize: "0.975rem" }}>{product.description}</p>
@@ -154,14 +154,14 @@ export default async function ProductDetailPage(
               {product.features && product.features.length > 0 && (
                 <div style={{ marginBottom: "36px" }}>
                   <h2 style={{ fontFamily: "var(--font-jakarta,'Plus Jakarta Sans',system-ui,sans-serif)", fontWeight: 900, color: "#0D0D0D", fontSize: "1.25rem", letterSpacing: "-0.02em", marginBottom: "16px", display: "flex", alignItems: "center", gap: "10px" }}>
-                    <span style={{ width: "4px", height: "20px", background: "#C41A1A", borderRadius: "2px", display: "inline-block", flexShrink: 0 }} />
+                    <span style={{ width: "4px", height: "20px", background: "#800000", borderRadius: "2px", display: "inline-block", flexShrink: 0 }} />
                     Key Features
                   </h2>
                   <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "10px" }}>
                     {product.features.map((f) => (
                       <li key={f} style={{ display: "flex", alignItems: "flex-start", gap: "12px", padding: "12px 16px", background: "#F9FAFB", borderRadius: "10px", border: "1px solid #F0F0F0" }}>
-                        <div style={{ width: "20px", height: "20px", borderRadius: "50%", background: "rgba(196,26,26,0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: "1px" }}>
-                          <svg width="9" height="9" viewBox="0 0 20 20" fill="none" stroke="#C41A1A" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M4 10l4.5 4.5L16 6"/></svg>
+                        <div style={{ width: "20px", height: "20px", borderRadius: "50%", background: "rgba(128,0,0,0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: "1px" }}>
+                          <svg width="9" height="9" viewBox="0 0 20 20" fill="none" stroke="#800000" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M4 10l4.5 4.5L16 6"/></svg>
                         </div>
                         <span style={{ color: "#374151", fontSize: "0.9rem", lineHeight: 1.65 }}>{f}</span>
                       </li>
@@ -174,7 +174,7 @@ export default async function ProductDetailPage(
               {specs && Object.keys(specs).length > 0 && (
                 <div style={{ marginBottom: "36px" }}>
                   <h2 style={{ fontFamily: "var(--font-jakarta,'Plus Jakarta Sans',system-ui,sans-serif)", fontWeight: 900, color: "#0D0D0D", fontSize: "1.25rem", letterSpacing: "-0.02em", marginBottom: "16px", display: "flex", alignItems: "center", gap: "10px" }}>
-                    <span style={{ width: "4px", height: "20px", background: "#C41A1A", borderRadius: "2px", display: "inline-block", flexShrink: 0 }} />
+                    <span style={{ width: "4px", height: "20px", background: "#800000", borderRadius: "2px", display: "inline-block", flexShrink: 0 }} />
                     Technical Specifications
                   </h2>
                   <div style={{ border: "1px solid #E5E5E5", borderRadius: "12px", overflow: "hidden" }}>
@@ -192,12 +192,12 @@ export default async function ProductDetailPage(
               {product.applications && product.applications.length > 0 && (
                 <div style={{ marginBottom: "36px" }}>
                   <h2 style={{ fontFamily: "var(--font-jakarta,'Plus Jakarta Sans',system-ui,sans-serif)", fontWeight: 900, color: "#0D0D0D", fontSize: "1.25rem", letterSpacing: "-0.02em", marginBottom: "16px", display: "flex", alignItems: "center", gap: "10px" }}>
-                    <span style={{ width: "4px", height: "20px", background: "#C41A1A", borderRadius: "2px", display: "inline-block", flexShrink: 0 }} />
+                    <span style={{ width: "4px", height: "20px", background: "#800000", borderRadius: "2px", display: "inline-block", flexShrink: 0 }} />
                     Applications
                   </h2>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
                     {product.applications.map((app) => (
-                      <span key={app} style={{ display: "inline-flex", alignItems: "center", gap: "6px", padding: "7px 14px", background: "rgba(196,26,26,0.06)", color: "#C41A1A", border: "1px solid rgba(196,26,26,0.15)", borderRadius: "999px", fontSize: "12.5px", fontWeight: 600 }}>
+                      <span key={app} style={{ display: "inline-flex", alignItems: "center", gap: "6px", padding: "7px 14px", background: "rgba(128,0,0,0.06)", color: "#800000", border: "1px solid rgba(128,0,0,0.15)", borderRadius: "999px", fontSize: "12.5px", fontWeight: 600 }}>
                         <svg width="8" height="8" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M4 10l4.5 4.5L16 6"/></svg>
                         {app}
                       </span>
@@ -235,7 +235,7 @@ export default async function ProductDetailPage(
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(270px, 1fr))", gap: "16px" }}>
               {related.map((rp) => (
                 <div key={rp.id} className="card-light" style={{ overflow: "hidden", display: "flex", flexDirection: "column" }}>
-                  <div style={{ height: "3px", background: "linear-gradient(90deg, #C41A1A, #E02020)" }} />
+                  <div style={{ height: "3px", background: "linear-gradient(90deg, #800000, #950000)" }} />
                   <div style={{ background: "#F8F8F8", display: "flex", alignItems: "center", justifyContent: "center", padding: "20px 16px", height: "160px" }}>
                     <Image src={rp.image} alt={rp.name} width={200} height={120} style={{ objectFit: "contain", maxHeight: "120px" }} />
                   </div>

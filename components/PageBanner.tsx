@@ -41,7 +41,7 @@ export default function PageBanner({ image, children }: PageBannerProps) {
       <div style={{
         position: "absolute", top: "-20%", left: "-8%",
         width: "520px", height: "520px", borderRadius: "50%",
-        background: "radial-gradient(circle, rgba(123,21,21,0.32) 0%, transparent 70%)",
+        background: "radial-gradient(circle, rgba(92,0,0,0.32) 0%, transparent 70%)",
         pointerEvents: "none",
       }} />
       {/* Bottom fade to page background */}

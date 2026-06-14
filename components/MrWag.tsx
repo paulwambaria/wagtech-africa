@@ -108,12 +108,12 @@ export default function MrWag() {
         .mrwag-btn {
           position: fixed; bottom: 28px; right: 28px; z-index: 999;
           width: 60px; height: 60px; border-radius: 50%;
-          background: #C41A1A; border: none; cursor: pointer;
+          background: #800000; border: none; cursor: pointer;
           display: flex; align-items: center; justify-content: center;
-          box-shadow: 0 4px 20px rgba(196,26,26,0.45);
+          box-shadow: 0 4px 20px rgba(128,0,0,0.45);
           transition: transform 0.2s, box-shadow 0.2s;
         }
-        .mrwag-btn:hover { transform: scale(1.08); box-shadow: 0 6px 28px rgba(196,26,26,0.55); }
+        .mrwag-btn:hover { transform: scale(1.08); box-shadow: 0 6px 28px rgba(128,0,0,0.55); }
         .mrwag-badge {
           position: absolute; top: -2px; right: -2px;
           width: 16px; height: 16px; border-radius: 50%;
@@ -159,11 +159,11 @@ export default function MrWag() {
         .mrwag-peek-close:hover { background: #E5E5E5; }
         .mrwag-peek-start {
           display: inline-flex; align-items: center; gap: 6px;
-          background: #C41A1A; color: #fff; border: none; cursor: pointer;
+          background: #800000; color: #fff; border: none; cursor: pointer;
           padding: 9px 16px; border-radius: 10px; font-size: 13px; font-weight: 600;
           margin-top: 12px; transition: background 0.2s; font-family: inherit;
         }
-        .mrwag-peek-start:hover { background: #A51515; }
+        .mrwag-peek-start:hover { background: #6B0000; }
 
         /* ── Chat panel ── */
         .mrwag-panel {
@@ -180,7 +180,7 @@ export default function MrWag() {
           to   { opacity: 1; transform: translateY(0) scale(1); }
         }
         .mrwag-header {
-          background: linear-gradient(135deg, #7B1515 0%, #C41A1A 100%);
+          background: linear-gradient(135deg, #5C0000 0%, #800000 100%);
           padding: 16px 18px; display: flex; align-items: center; gap: 12px;
         }
         .mrwag-avatar {
@@ -205,7 +205,7 @@ export default function MrWag() {
         }
         .msg-user {
           align-self: flex-end; max-width: 82%;
-          background: #C41A1A; color: #fff;
+          background: #800000; color: #fff;
           padding: 10px 13px; border-radius: 14px 4px 14px 14px;
           font-size: 13.5px; line-height: 1.55;
         }
@@ -239,14 +239,14 @@ export default function MrWag() {
           transition: border-color 0.18s;
           font-family: inherit;
         }
-        .mrwag-input:focus { border-color: #C41A1A; background: #fff; }
+        .mrwag-input:focus { border-color: #800000; background: #fff; }
         .mrwag-send {
           width: 38px; height: 38px; border-radius: 10px;
-          background: #C41A1A; border: none; cursor: pointer;
+          background: #800000; border: none; cursor: pointer;
           display: flex; align-items: center; justify-content: center;
           flex-shrink: 0; transition: background 0.2s;
         }
-        .mrwag-send:hover { background: #A51515; }
+        .mrwag-send:hover { background: #6B0000; }
         .mrwag-send:disabled { background: #E5E5E5; cursor: default; }
         @media (max-width: 480px) {
           .mrwag-panel { width: calc(100vw - 20px); right: 10px; bottom: 90px; max-height: 70vh; }
@@ -260,7 +260,7 @@ export default function MrWag() {
         <div className="mrwag-peek">
           <button className="mrwag-peek-close" onClick={dismissPeek} aria-label="Dismiss">✕</button>
           <div style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
-            <div style={{ width: "44px", height: "44px", borderRadius: "50%", background: "linear-gradient(135deg,#7B1515,#C41A1A)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+            <div style={{ width: "44px", height: "44px", borderRadius: "50%", background: "linear-gradient(135deg,#5C0000,#800000)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
               <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff">
                 <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
               </svg>
@@ -268,7 +268,7 @@ export default function MrWag() {
             <div style={{ paddingTop: "2px" }}>
               <div style={{ fontWeight: 800, fontSize: "14.5px", color: "#0D0D0D", fontFamily: "var(--font-jakarta,'Plus Jakarta Sans',system-ui,sans-serif)" }}>
                 Mr. Wag
-                <span style={{ marginLeft: "7px", background: "rgba(196,26,26,0.08)", color: "#C41A1A", fontSize: "10px", fontWeight: 700, padding: "2px 7px", borderRadius: "999px", letterSpacing: "0.06em", verticalAlign: "middle" }}>AI</span>
+                <span style={{ marginLeft: "7px", background: "rgba(128,0,0,0.08)", color: "#800000", fontSize: "10px", fontWeight: 700, padding: "2px 7px", borderRadius: "999px", letterSpacing: "0.06em", verticalAlign: "middle" }}>AI</span>
               </div>
               <div style={{ fontSize: "13px", color: "#444", marginTop: "6px", lineHeight: 1.5 }}>
                 Hi there! 👋 I&apos;m Mr. Wag — I can answer questions about our water quality labs, weather stations, and all Wagtech solutions. Happy to help!
@@ -334,7 +334,7 @@ export default function MrWag() {
                 {msg.role === "assistant" ? (
                   <div className="msg-wag">
                     <div className="mrwag-avatar" style={{ width: "28px", height: "28px", flexShrink: 0, background: "#F4F4F5", border: "1.5px solid #E5E5E5" }}>
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="#C41A1A">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="#800000">
                         <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
                       </svg>
                     </div>
@@ -359,7 +359,7 @@ export default function MrWag() {
             {loading && (
               <div className="msg-wag">
                 <div className="mrwag-avatar" style={{ width: "28px", height: "28px", flexShrink: 0, background: "#F4F4F5", border: "1.5px solid #E5E5E5" }}>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#C41A1A">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#800000">
                     <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
                   </svg>
                 </div>

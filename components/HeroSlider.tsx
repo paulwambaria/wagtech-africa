@@ -89,7 +89,7 @@ export default function HeroSlider() {
           <div style={{
             position: "absolute", top: "20%", left: "-10%",
             width: "560px", height: "560px", borderRadius: "50%",
-            background: "radial-gradient(circle, rgba(123,21,21,0.3) 0%, transparent 70%)",
+            background: "radial-gradient(circle, rgba(92,0,0,0.3) 0%, transparent 70%)",
             pointerEvents: "none",
           }} />
         </div>
@@ -163,7 +163,7 @@ export default function HeroSlider() {
                 width: i === current ? "3px" : "3px",
                 height: i === current ? "32px" : "16px",
                 borderRadius: "2px",
-                background: i === current ? "#C41A1A" : "rgba(255,255,255,0.22)",
+                background: i === current ? "#800000" : "rgba(255,255,255,0.22)",
                 border: "none", cursor: "pointer", padding: 0,
                 transition: "all 0.4s ease",
               }}
@@ -188,7 +188,7 @@ export default function HeroSlider() {
             display: "flex", alignItems: "center", justifyContent: "center",
             transition: "background 0.2s",
           }}
-          onMouseEnter={e => (e.currentTarget.style.background = "#C41A1A")}
+          onMouseEnter={e => (e.currentTarget.style.background = "#800000")}
           onMouseLeave={e => (e.currentTarget.style.background = "rgba(255,255,255,0.07)")}
         >
           <svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M13 5l-5 5 5 5"/></svg>
@@ -201,7 +201,7 @@ export default function HeroSlider() {
               style={{
                 width: i === current ? "28px" : "8px", height: "8px",
                 borderRadius: "4px",
-                background: i === current ? "#C41A1A" : "rgba(255,255,255,0.28)",
+                background: i === current ? "#800000" : "rgba(255,255,255,0.28)",
                 border: "none", cursor: "pointer", padding: 0,
                 transition: "all 0.35s ease",
               }}
@@ -218,7 +218,7 @@ export default function HeroSlider() {
             display: "flex", alignItems: "center", justifyContent: "center",
             transition: "background 0.2s",
           }}
-          onMouseEnter={e => (e.currentTarget.style.background = "#C41A1A")}
+          onMouseEnter={e => (e.currentTarget.style.background = "#800000")}
           onMouseLeave={e => (e.currentTarget.style.background = "rgba(255,255,255,0.07)")}
         >
           <svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 5l5 5-5 5"/></svg>
@@ -233,7 +233,7 @@ export default function HeroSlider() {
       {/* ── Progress bar ── */}
       <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "2px", background: "rgba(255,255,255,0.07)", zIndex: 6 }}>
         <div key={current} style={{
-          height: "100%", background: "#C41A1A",
+          height: "100%", background: "#800000",
           animation: "slideProgress 6s linear forwards",
         }} />
       </div>
